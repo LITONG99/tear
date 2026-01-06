@@ -1,0 +1,100 @@
+Weather: <NEWLINE> | Time | Maximum temperature | Location | <NEWLINE> | Wednesday | 47 degrees Celsius | Nagpur and Chandrapur |
+Weather: <NEWLINE> | Time | Temperature | Weather type | <NEWLINE> | Friday | cooler | mostly dry |
+Weather: <NEWLINE> | Wind status | Weather area | Weather type | <NEWLINE> | windy | mostly cloudy, windy & few showers |especially to east |
+Weather: <NEWLINE> | Time | Wind status | Weather type | <NEWLINE> | over the coming days & at the end of the week | scorching weather | windy |
+Weather: <NEWLINE> | Time | Maximum temperature | <NEWLINE> | 12pm | 7C |
+Weather: <NEWLINE> | Time | Temperature | Weather type | <NEWLINE> | Wednesday | 12 degrees | rain |
+Weather: <NEWLINE> | Time | Cloud status | Weather type | <NEWLINE> | Tomorrow & throughout the day | cloud | rain and cloud |
+Weather: <NEWLINE> | Temperature | Location | Weather occurring chance | Weather type | <NEWLINE> | below average | lower levels | north | hail, sleet and snow |
+Weather: <NEWLINE> | Time | Temperature | Maximum temperature | <NEWLINE> | Wednesday | low 80s & low 90s |  | <NEWLINE> | Thursday | mid-90s |  |
+Weather: <NEWLINE> | Weather occurring chance | Weather type | <NEWLINE> | slight | showers |
+Weather: <NEWLINE> | Temperature | Weather occurring chance | Weather type | <NEWLINE> | Cold | chance | snow showers |
+Weather: <NEWLINE> | Maximum temperature | <NEWLINE> | low to mid 70s |
+Weather: <NEWLINE> | Time | Location | Snow status | Weather type | <NEWLINE> | Sunday | Little Cottonwood Canyon | heavy | snow |
+Weather: <NEWLINE> | Time | Location | Weather type | <NEWLINE> | this week | much of the rest of the Carolinas | dry |
+Weather: <NEWLINE> | Temperature | Location | Weather type | Time | Weather occurring chance | <NEWLINE> | cold | above 4000 feet or so in elevation | snowy | Fri-Sun | doubtful |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | near the waterfront and shoreline | flooding |
+Weather: <NEWLINE> | Time | Location | Weather type | <NEWLINE> | Monday | out of Massachusetts | breaks of sun |
+Weather: <NEWLINE> | Time | Wind speed | Wind status | <NEWLINE> | in the course of the week | 8 mph | fairly calm |
+Weather: <NEWLINE> | Wind status | Location | Weather type | Time | Weather occurring chance | <NEWLINE> | stronger | especially in the south | heavy & thundery | at times | heavy and thundery |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | throughout the afternoon | rain |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | Monday and Tuesday | abundant sunshine |
+Weather: <NEWLINE> | Wind speed | Wind direction | <NEWLINE> | 20 to 40 km/h | ENE - E |
+Weather: <NEWLINE> | Time | Maximum temperature | <NEWLINE> | Saturday | middle 40s | <NEWLINE> | by the final whistle | near 40 |
+Weather: <NEWLINE> | Time | Temperature | Location | Weather occurring chance | Weather type | <NEWLINE> | Wednesday | subzero | Ireland | possibly | thunder showers |
+Weather: <NEWLINE> | Temperature | Location | Maximum temperature | <NEWLINE> | toasty | Vancouver Area | 27.9 C | <NEWLINE> |  | White Rock Area | 30.1 C |
+Weather: <NEWLINE> | Time | Wind status | Weather area | Weather type | <NEWLINE> | Sunday | isolated | isolated showers | westerly winds and Atlantic seas at 2 to 4 feet |
+Weather: <NEWLINE> | Time | Maximum temperature | Cloud status | Weather type | <NEWLINE> | Friday & Saturday | 22 C | cloud | a mix of sun and cloud |
+Weather: <NEWLINE> | Time | Maximum temperature | Rain status | Weather type | <NEWLINE> |:00 | Heavy | 7C | Heavy rain |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | near the upper Great Lakes | polar vortex |
+Weather: <NEWLINE> | Time | Temperature | Weather type | <NEWLINE> | overnight into Saturday morning | plummet | high pressure |
+Weather: <NEWLINE> | Time | Location | Weather type | <NEWLINE> | tonight | into the Carolinas | scattered showers |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | throughout the morning | light and heavy rain |
+Weather: <NEWLINE> | Time | Snow status | Weather type | <NEWLINE> | Feb. 25 at 7:15 a.m. | Glacier National Park | Avalanche |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | 4pm | 9C |
+Weather: <NEWLINE> | Time | Maximum temperature | Location | Cloud status | Weather type | <NEWLINE> | Thursday |ilder | for Denver and the plains | mostly sunny to partly cloudy | highs back in the mid-50s |
+Weather: <NEWLINE> | Time | Weather compass direction | Weather type | <NEWLINE> | in the afternoon | along the sea breeze | few storms |
+Weather: <NEWLINE> | Time | Temperature | Wind status | Weather type | <NEWLINE> | Night | windy and very cold | windy | windy and very cold |
+Weather: <NEWLINE> | Time | Location | Weather type | <NEWLINE> | for the day | across the UK | scattered showers |
+Weather: <NEWLINE> | Time | Temperature | Maximum temperature | <NEWLINE> | in the evening & overnight | minus 11 | minus 20 |
+Weather: <NEWLINE> | Time | Temperature | Weather type | <NEWLINE> | Sunday | warm | turn to rain and snow |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | Monday night | chilly |
+Weather: <NEWLINE> | Time | Wind status | Weather type | <NEWLINE> | Monday | breezy & a few showers | ahead of the front |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | far west of Northern Ireland | rain |
+Weather: <NEWLINE> | Maximum temperature | <NEWLINE> | upper 60s & upper 80s |
+Weather: <NEWLINE> | Wind status | Location | Weather type | Time | Maximum temperature | Wind speed | <NEWLINE> | northwesterly winds | parts of Saskatchewan | gusts in excess of 70 to 80 kilometres per hour | daytime | low 20s in Saskatoon, mid-20s in Regina | northwesterly |
+Weather: <NEWLINE> | Time | <NEWLINE> | Monday |
+Weather: <NEWLINE> | Wind status | Location | Weather type | <NEWLINE> | high winds and heavy snow | in the high country | likely |
+Weather: <NEWLINE> | Time | Temperature | Location | Weather type | <NEWLINE> | Saturday | 33C | southeast England | sunshine |
+Weather: <NEWLINE> | Time | <NEWLINE> | This morning |
+Weather: <NEWLINE> | Time | Location | Wind status | Weather type | <NEWLINE> | for the whole of today | from the south coast all the way up to Newcastle | strong gusty winds | downpours |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | from the eastern Texas panhandle to Oklahoma | impacts |
+Weather: <NEWLINE> | Time | Weather occurring chance | Weather type | <NEWLINE> | on the weekend | chance | thundery rain |
+Weather: <NEWLINE> | Time | Location | <NEWLINE> | this morning | Sheffield |
+Weather: <NEWLINE> | Time | Weather occurring chance | Weather type | <NEWLINE> | weekend | partly-cloudy - to - sunny | 10-percent |
+Weather: <NEWLINE> | Weather type | <NEWLINE> | changeable |
+Weather: <NEWLINE> | Time | Location | Weather type | <NEWLINE> | overnight | southern coasts | rain, sleet and snow | <NEWLINE> | overnight |  | wintry showers |
+Weather: <NEWLINE> | Time | Maximum temperature | <NEWLINE> | overnight | 0 to 3 degrees Celsius |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | parts of the country | heavy and thundery showers |
+Weather: <NEWLINE> | Time | <NEWLINE> | throughout the evening and overnight |
+Weather: <NEWLINE> | Wind status | Location | Temperature | Wind direction | <NEWLINE> | Gales | in the north and west & from the northwest | colder | possible |
+Weather: <NEWLINE> | Weather compass direction | Temperature | <NEWLINE> | just to our south | cool-down |
+Weather: <NEWLINE> | Time | Cloud status | Weather occurring chance | Weather type | <NEWLINE> | Tomorrow & later in the day | a bit more cloud |  | possibility of one or two isolated showers |
+Weather: <NEWLINE> | Time | Location | Weather type | <NEWLINE> | between late morning and afternoon | Georgia | storms |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | between Revelstoke and the ferry | slippery |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | north coast region | above average rainfall and alpine snow | <NEWLINE> | south coast region | drier than normal |
+Weather: <NEWLINE> | Time | Temperature | Weather type | <NEWLINE> | SUNDAY | hotter & more humid | Sunny |
+Weather: <NEWLINE> | Time | Location | Weather frequency | Weather type | <NEWLINE> | overnight on Monday | north and east Scotland | spells | Showers |
+Weather: <NEWLINE> | Time | Temperature | Location | Weather type | <NEWLINE> | Wednesday and Thursday | cool | northeast | showers & scattered thunderstorms |
+Weather: <NEWLINE> | Time | Wind status | <NEWLINE> | Sept. 30 | end of Atlantic hurricane season |
+Weather: <NEWLINE> | Time | Wind speed | Weather type | <NEWLINE> | late this afternoon | 100 km/h | severe storms |
+Weather: <NEWLINE> | Time | Temperature | Location | Weather type | <NEWLINE> | as the week progresses | cooler | UK | autumn |
+Weather: <NEWLINE> | Time | Location | <NEWLINE> | this afternoon | Blackpool |
+Weather: <NEWLINE> | Time | Location | Weather type | <NEWLINE> | between 8 and 9 a.m. | Space Coast | rain and storms |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | early Friday | hurricane | <NEWLINE> | by the weekend | weakening |
+Weather: <NEWLINE> | Time | Location | Weather type | <NEWLINE> | Saturday night into Sunday morning | our area | rain |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | overnight | snow | <NEWLINE> | after 5 a.m Sunday | sleet |
+Weather: <NEWLINE> | Location | Weather occurring chance | Rain status | Weather type | <NEWLINE> | northern and southern extent | heaviest rain | Dumfries and Galloway | most likely to see some impacts |
+Weather: <NEWLINE> | Temperature | Location | Weather occurring chance | Weather type | <NEWLINE> | cold | UK | especially for northern parts | snow and ice |
+Weather: <NEWLINE> | Time | Wind status | Weather type | <NEWLINE> | Wednesday | mostly cloudy and breezy & showers | possible |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | during the morning hours Friday through Sunday | a bit cool |
+Weather: <NEWLINE> | Time | Maximum temperature | <NEWLINE> | 12pm | 17C |
+Weather: <NEWLINE> | Time | Location | Wind status | Weather type | <NEWLINE> | Tuesday | southeastern parts | strong | rain |
+Weather: <NEWLINE> | Time | Weather occurring chance | Weather type | <NEWLINE> | during the season | dry | break |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | over the next few days | hot |
+Weather: <NEWLINE> | Time | Weather occurring chance | Weather type | <NEWLINE> | Wednesday | “last chance for awhile | rain |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | Tuesday evening | clear |
+Weather: <NEWLINE> | Weather area | Location | Weather type | Time | Weather occurring chance | <NEWLINE> | Delhi and its adjoining regions such as, Noida, Greater Noida, Gurugram, Faridabad and Ghaziabad | moderate rain and thundershowers | Tuesday |  |  |
+Weather: <NEWLINE> | Time | Maximum temperature | Wind speed | Weather type | <NEWLINE> | Tomorrow & throughout the day | 30’s | 25 to 35 mile-per-hour | snowfall |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | Sebastien | merges with another low |
+Weather: <NEWLINE> | Time | Location | Weather type | <NEWLINE> | Thursday | much of Yorkshire, along with parts of northeast of England and the north Midlands | Rain |
+Weather: <NEWLINE> | Time | Maximum temperature | Weather type | <NEWLINE> |:00 | Light rain | 6C |
+Weather: <NEWLINE> | Time | Temperature | Weather type | <NEWLINE> | after 5pm | quickly dark |  |
+Weather: <NEWLINE> | Time | Location | Weather occurring chance | Weather type | <NEWLINE> | Monday | off the coast of New England | scattered | showers |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | Wednesday, Thursday and Friday | mostly sunny |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | Saturday | hot |
+Weather: <NEWLINE> | Time | Temperature | Weather occurring chance | Weather type | <NEWLINE> | during the day during the coming week | 3C |  | snow | <NEWLINE> | during next week |  | risk | further snow showers |
+Weather: <NEWLINE> | Time | Location | Weather occurring chance | Weather type | <NEWLINE> | Sunday and possibly Monday | there | better chance | showers and storms |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | Saturday | warm |
+Weather: <NEWLINE> | Time | Temperature | Weather occurring chance | Weather type | <NEWLINE> | both days | 40s and 50s | not expected | severe weather |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | several more days and into next weekend | rain showers and thunderstorms |

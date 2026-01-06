@@ -1,0 +1,100 @@
+Weather: <NEWLINE> | Weather occurring chance | Location | Time | Weather type | <NEWLINE> | isolated thunderstorms | Tuesday and into Wednesday | Warm and humid | for most | <NEWLINE> |  | in the south east | Tuesday and into Wednesday | hot |
+Weather: <NEWLINE> | Weather occurring chance | Location | Weather type | Time | Weather type | <NEWLINE> | a chance | most areas | Friday & Sunday | dry and sunny | across the UK |
+Weather: <NEWLINE> | Weather frequency | Time | Weather type | <NEWLINE> | Mostly | overnight | showers |
+Weather: <NEWLINE> | Weather occurring chance | Location | Time | Weather type | <NEWLINE> |  | the area | in the afternoon and evening | thunderstorms & minor flooding |
+Weather: <NEWLINE> | Wind status | Time | Weather type | <NEWLINE> | windy | through the rest of the week & through the rest of the week | wet and windy & some drier, brighter periods |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | Sunday afternoon | mostly bright sunshine | <NEWLINE> | Monday | some small periods of cloud |
+Weather: <NEWLINE> | Weather frequency | Time | Weather type | <NEWLINE> | mostly | Saturday | dry | <NEWLINE> | spells |  | sunshine |
+Weather: <NEWLINE> | Weather occurring chance | Location | Weather type | <NEWLINE> |  | over few areas | thunderstorm activity & light hailstorm |
+Weather: <NEWLINE> | Weather occurring chance | Location | Time | Weather type | <NEWLINE> |  | over the mountains | by afternoon | fair to partly cloudy |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | some of the UK | dry | <NEWLINE> | longer spells | rain |
+Weather: <NEWLINE> | Wind status | Time | Weather type | <NEWLINE> | brief | mid-evening | storms |
+Weather: <NEWLINE> | Weather occurring chance | Location | Weather type | <NEWLINE> |  | local | snowfall accumulations |
+Weather: <NEWLINE> | Weather occurring chance | Time | Weather type | <NEWLINE> | likely | afternoon and evening of the final round | rain |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | Quetta | raining | <NEWLINE> | some areas | light shows |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | Tuesday | dry out | <NEWLINE> | Tuesday | a few degrees above normal |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | Thursday | largely dry & sunny spells |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | in the north and east Wednesday & Thursday | showers | <NEWLINE> | elsewhere | sunny spells |
+Weather: <NEWLINE> | Location | Weather compass direction | Time | Weather type | <NEWLINE> | in the west | in the west & spread to the rest of the country | throughout the day | heavy showers |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | over the Nature Coast | high clouds |
+Weather: <NEWLINE> | Wind status | Location | Weather compass direction | Time | Weather type | <NEWLINE> |  | towards the southeast |  | in the morning | outbreaks of heavy rain |
+Weather: <NEWLINE> | Location | Time | Weather type | <NEWLINE> | in the west | through the afternoon | showers |
+Weather: <NEWLINE> | Wind status | Time | Weather type | <NEWLINE> | windy | Saturday | briefly clear with occasional sunny spells | <NEWLINE> |  | Sunday | wet and windy |
+Weather: <NEWLINE> | Wind status | Location | Time | <NEWLINE> | windy | across the north | at times |
+Weather: <NEWLINE> | Weather occurring chance | Time | Weather type | <NEWLINE> | likely | today & throughout | cloudy & burst of rain |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | over few places in East Uttar Pradesh and Bihar | rains |
+Weather: <NEWLINE> | Wind status | Location | Weather compass direction | Time | Weather type | <NEWLINE> | strong | across Cumbria | Wednesday 12 June to Saturday 15 June | wet and breezy & some heavy bursts of rain | in places |
+Weather: <NEWLINE> | Weather frequency | Time | Weather type | <NEWLINE> | mostly | tonight | dry | <NEWLINE> | isolated | tonight | showers |
+Weather: <NEWLINE> | Weather occurring chance | Time | Weather type | <NEWLINE> |  | later on Saturday | heavy rain & scattered showers | <NEWLINE> |  | Saturday | sunny spells |
+Weather: <NEWLINE> | Time | <NEWLINE> | 6:51 a.m. ET |
+Weather: <NEWLINE> | Weather occurring chance | Weather type | Time | Weather type | <NEWLINE> | possible | thunderstorms | tonight | Showers and thunderstorms | <NEWLINE> | possible | locally heavy | tonight | Showers and thunderstorms |
+Weather: <NEWLINE> | Weather frequency | Location | Time | Weather type | <NEWLINE> |  | the North West | Tuesday | a mix of sunny spells & showers |
+Weather: <NEWLINE> | Weather frequency | Time | Weather type | <NEWLINE> |  | the first week of meteorological autumn | rainy spells & sunshine & showers |
+Weather: <NEWLINE> | Wind status | Location | Weather type | <NEWLINE> |  | southern Scotland |  | <NEWLINE> |  |  | morning fog | <NEWLINE> |  |  | sunny spells | <NEWLINE> |  | across southern Scotland | rain & thundery |
+Weather: <NEWLINE> | Weather occurring chance | Time | Weather type | <NEWLINE> |  | throughout the morning | burst of rain |
+Weather: <NEWLINE> | Weather occurring chance | Location | Time | Weather type | <NEWLINE> | scattered | in places | Sunday and Monday | sunny spells & scattered showers |
+Weather: <NEWLINE> | Weather occurring chance | Location | Time | Weather type | <NEWLINE> | very likely | over Sub-Himalayan West Bengal & Sikkim and northeastern states | from 30 May onwards | rainfall & isolated heavy falls |
+Weather: <NEWLINE> | Weather occurring chance | Weather type | Time | Weather type | <NEWLINE> |  | localized thunderstorms | 4 a.m. | rain showers |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | during the afternoon |  | <NEWLINE> | throughout | cloudy |
+Weather: <NEWLINE> | Weather occurring chance | Location | Time | Weather type | <NEWLINE> |  | over the mountains | by afternoon | convective clouds |
+Weather: <NEWLINE> | Wind status | Location | Weather type | <NEWLINE> | scattered | elsewhere | thunderstorms |
+Weather: <NEWLINE> | Wind status | Weather type | <NEWLINE> | gusty | downpours & gusty winds |
+Weather: <NEWLINE> | Wind status | Location | Weather compass direction | Time | Weather type | <NEWLINE> | stormy | in west and south Munster | in the evening | very windy or stormy & very strong, gusty west to northwest winds |  |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | Friday-Saturday | flurries & some snow showers | <NEWLINE> | Friday-Saturday | highs only in the 30s |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | all afternoon | Rain |
+Weather: <NEWLINE> | Temperature | Location | Time | Weather type | <NEWLINE> | chilly | for many | Sunday 8 September to Tuesday 17 September | bright & remaining largely dry |
+Weather: <NEWLINE> | Location | Time | <NEWLINE> | Sunderland | this afternoon |
+Weather: <NEWLINE> | Wind status | Temperature | <NEWLINE> | windy | cool |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | Central and southern England | sunny spells | <NEWLINE> | either side of this | showers |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | near the upper Great Lakes | polar vortex |
+Weather: <NEWLINE> | Temperature | Time | Weather type | <NEWLINE> | 7C | 17:00 | rain |
+Weather: <NEWLINE> | Wind status | Location | Weather compass direction | Time | Weather type | <NEWLINE> | 50mph | in from the Atlantic | Wednesday | thunderstorms & 50mph winds |  |
+Weather: <NEWLINE> | Temperature | Location | Time | Weather type | <NEWLINE> | warmer | across the area | Thursday | clouds |
+Weather: <NEWLINE> | Weather occurring chance | Wind status | Location | Weather compass direction | Time | Weather type | <NEWLINE> |  | many parts of the UK | thereafter | settled | high pressure builds in from the southwest |  |
+Weather: <NEWLINE> | Weather occurring chance | Location | Time | Weather type | <NEWLINE> | likely | a few homes and businesses | likely | flooding | <NEWLINE> | probably | bus and train services | probably | longer |
+Weather: <NEWLINE> | Weather occurring chance | Weather type | Time | Temperature | <NEWLINE> | feeble |  | 10-12 days | no pre-monsoon activity & rains |
+Weather: <NEWLINE> | Temperature | Location | Time | Weather type | <NEWLINE> | subzero | Ireland | Wednesday | thunder showers |
+Weather: <NEWLINE> | Location | Time | Temperature | <NEWLINE> | all over Central Florida | Thursday | plenty of sunshine |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | this afternoon | partly to mostly sunny |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | from 12pm onwards & throughout the afternoon | rain |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | northern and southern extent | heaviest rain | <NEWLINE> | Dumfries and Galloway | most likely to see some impacts |
+Weather: <NEWLINE> | Wind status | Location | Time | Weather type | <NEWLINE> | strong | some areas | Wednesday into Thursday | heavy rain & flash flood |
+Weather: <NEWLINE> | Weather occurring chance | Time | Weather type | <NEWLINE> | not super high | Friday evening | rain |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | Tuesday | windy & cooler | <NEWLINE> | Wednesday | sunny |
+Weather: <NEWLINE> | Weather occurring chance | Time | Weather type | <NEWLINE> |  | throughout the remainder of the evening | dry |
+Weather: <NEWLINE> | Weather occurring chance | Location | Time | Weather type | <NEWLINE> |  | across the northwest | the first half of July | unsettled & longer spells of rain |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | ending this morning | Light snow | <NEWLINE> | this morning | mainly cloudy |
+Weather: <NEWLINE> | Weather occurring chance | Weather type | Time | Weather type | <NEWLINE> | severe storms | during the day |  | large hail, heavy downpours, strong winds and even a possible tornado | <NEWLINE> |  | the mercury soars toward the 30s | Weather type |  | <NEWLINE> | possible |  | during the day |  |
+Weather: <NEWLINE> | Wind status | Location | <NEWLINE> |  |west |
+Weather: <NEWLINE> | Temperature | Time | Weather type | <NEWLINE> | warm | evening | partly to mostly cloudy |
+Weather: <NEWLINE> | Location | Time | Weather type | <NEWLINE> | from the west | this weekend | fresher |
+Weather: <NEWLINE> | Weather occurring chance | Time | Weather type | <NEWLINE> | 90 percent | Saturday night | precipitation |
+Weather: <NEWLINE> | Weather occurring chance | Time | Weather type | <NEWLINE> | 40 percent | before midnight | showers and thunderstorms |
+Weather: <NEWLINE> | Temperature | Time | <NEWLINE> | between 18 and 24C | each day | <NEWLINE> | close | night |
+Weather: <NEWLINE> | Wind status | Location | Weather compass direction | Time | Weather type | <NEWLINE> | warm | south | north | Friday | warm front |
+Weather: <NEWLINE> | Temperature | Location | Time | Weather type | <NEWLINE> | a little colder | Pennsylvania | next week | dangerously cold |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | through the overnight hours | clear |
+Weather: <NEWLINE> | Weather occurring chance | Time | Weather type | <NEWLINE> |  | this weekend | snow showers |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | This weekend & this weekend | rainfall & bright skies |
+Weather: <NEWLINE> | Time | Temperature | <NEWLINE> | over the next four days | 60-degree | <NEWLINE> | Tuesday and Wednesday | warming up a bit | <NEWLINE> |  | 65 and 68, respectively |
+Weather: <NEWLINE> | Wind status | Location | Weather compass direction | Time | Weather type | <NEWLINE> | breezy | in the south | south | by late morning | Wet and breezy |
+Weather: <NEWLINE> | Location | Time | Weather type | <NEWLINE> | Langley | Wednesday, May 15, 2019 | mild and moderate congestion | <NEWLINE> | past the Port Mann Bridge | Wednesday, May 15, 2019 | moderate congestion |
+Weather: <NEWLINE> | Weather occurring chance | Wind status | Location | Weather compass direction | Time | Weather type | <NEWLINE> |  | in the north |  |  | in brighter, showery, colder interludes between weather systems |  |
+Weather: <NEWLINE> | Time | <NEWLINE> | in the 50s and 60s |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | this afternoon | bright sunshine | <NEWLINE> | from 4pm onwards | cloud |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | during the early evening | clearing |
+Weather: <NEWLINE> | Wind status | Time | <NEWLINE> | northwest 5 to 10 mph | in the afternoon |
+Weather: <NEWLINE> | Wind status | Location | Weather type | <NEWLINE> | Nestor | the area | sun and clouds |
+Weather: <NEWLINE> | Weather frequency | Time | Weather type | <NEWLINE> | Mostly | Saturday | sunny |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | the UK | week of wet weather and thunderstorms |
+Weather: <NEWLINE> | Time | Weather type | <NEWLINE> | into the afternoon | sprinkles |
+Weather: <NEWLINE> | Temperature | Location | Time | <NEWLINE> | above average | province | this summer |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | in areas of the country | heavy rainstorm |
+Weather: <NEWLINE> | Temperature | Time | Weather type | <NEWLINE> |  |  |  | <NEWLINE> | around 63 degrees | in the afternoon | mostly sunny |
+Weather: <NEWLINE> | Temperature | Time | Weather type | <NEWLINE> | 14 degrees | Sunday's | bright sunshine |
+Weather: <NEWLINE> | Temperature | <NEWLINE> | lower 70s |
+Weather: <NEWLINE> | Temperature | Location | Time | Weather type | <NEWLINE> |  | in the south and southwest | Friday | relatively mild | <NEWLINE> | cold | by the weekend | cold and wet |  |
+Weather: <NEWLINE> | Location | Time | Temperature | <NEWLINE> | Sheffield | during the course of this week & in the coming days | snow |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | in the north | unsettled | <NEWLINE> | southern and southeastern areas | drier, brighter |
+Weather: <NEWLINE> | Location | Weather type | <NEWLINE> | through the central belt the far northeast of England and then the Midlands | sunshine |
+Weather: <NEWLINE> | Location | Time | Snow status | Weather type | <NEWLINE> | YVR | February | 31.2 cm | snow |

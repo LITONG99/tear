@@ -1,0 +1,9 @@
+bert_score==0.3.13
+fairseq==0.12.2
+kneed==0.8.5
+numpy==2.4.0
+sacrebleu==2.5.1
+torch==2.7.1+cu128
+tqdm==4.67.1
+transformers==4.56.1
+vendi_score==0.0.3

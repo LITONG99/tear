@@ -1,0 +1,89 @@
+{
+    "seed": 2025,
+    "validation": [
+        "Suspect status",
+        "Victim based",
+        "Suspect age",
+        "Suspect vehicle",
+        "Victim occupation",
+        "Victim vehicle"
+    ],
+    "test3": [
+        "Suspect name",
+        "Suspect weapon",
+        "Suspect occupation",
+        "Suspect based",
+        "Accident number",
+        "Prison name",
+        "Suspect description",
+        "Victim race",
+        "Suspect gender",
+        "Number of rounds fired",
+        "Hospital name",
+        "Suspect race",
+        "Personnel arrived time",
+        "Suspect number"
+    ],
+    "test2": [
+        "Accident number",
+        "Prison name",
+        "Suspect description",
+        "Victim race",
+        "Suspect gender",
+        "Number of rounds fired",
+        "Hospital name",
+        "Suspect race",
+        "Personnel arrived time",
+        "Suspect number"
+    ],
+    "test1": [
+        "Suspect gender",
+        "Number of rounds fired",
+        "Hospital name",
+        "Suspect race",
+        "Personnel arrived time",
+        "Suspect number"
+    ],
+    "train3": [
+        "Victim name",
+        "Accident address",
+        "Accident type",
+        "Victim status",
+        "Accident date",
+        "Victim number",
+        "Victim age",
+        "Victim gender"
+    ],
+    "train2": [
+        "Victim name",
+        "Accident address",
+        "Accident type",
+        "Victim status",
+        "Accident date",
+        "Victim number",
+        "Victim age",
+        "Victim gender",
+        "Suspect weapon",
+        "Suspect occupation",
+        "Suspect based",
+        "Suspect name"
+    ],
+    "train1": [
+        "Victim name",
+        "Accident address",
+        "Accident type",
+        "Victim status",
+        "Accident date",
+        "Victim number",
+        "Victim age",
+        "Victim gender",
+        "Accident number",
+        "Prison name",
+        "Victim race",
+        "Suspect description",
+        "Suspect weapon",
+        "Suspect occupation",
+        "Suspect based",
+        "Suspect name"
+    ]
+}

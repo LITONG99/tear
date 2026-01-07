@@ -1,0 +1,100 @@
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | Suspect name | <NEWLINE> | silver 2007 Mitsubishi Eclipse | Vance |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect name | <NEWLINE> | Tahoe |
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | Suspect age | <NEWLINE> | arrested | Alvin Bell | 21-year-old |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim gender | Victim age | <NEWLINE> | died from his injuries | Jon Booker | 25-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim based | Victim age | <NEWLINE> | Northwest D.C. | senior | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | <NEWLINE> | Joshua N. Barkley | 19 | <NEWLINE> | Ricky Whitlock | 51-year-old | <NEWLINE> | Marcus M. Gay | 43 | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | gold minivan and a silver car | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim age | <NEWLINE> | killed | 29-year-old | man | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | Suspect age | <NEWLINE> | turned himself in |vin C. Bryant | 19 |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect based | Suspect name | <NEWLINE> | Pembroke Meadows Civic League | Dixon |
+Accident: <NEWLINE> | Accident address | Accident type | <NEWLINE> | Capitol Heights, Maryland | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | dead | two | <NEWLINE> | injured | four | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooter | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | arrested without incident |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect based | Suspect status | Suspect name | Suspect age | <NEWLINE> | Eutaw | 23 | face several charges |very Lynn Hughes | <NEWLINE> | face several charges | LaDexter Tequan Pelt | 19 | Eutaw |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | Suspect age | <NEWLINE> | charged |cy Howard Crawford | 75-year-old |
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | South Bedford Avenue near Cherry Street | late night | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | <NEWLINE> | accused of being involved in a late night shooting | Dear |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect age | <NEWLINE> | held in the Cuyahoga County Juvenile Detention Center | teen |
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | Tangeray Tavern on the 900 block of Pratt Street | early Sunday evening | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim gender | Victim age | <NEWLINE> | Fredericksburg, Virginia | Brian Dale-Parker | 34 | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | black SUV |
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | restaurant parking lot at 9550 Bissonnet St. | around 5:40 p.m. | <NEWLINE> Victim: <NEWLINE> | Victim age | Victim gender | Victim number | <NEWLINE> | ages | 19 to 23 | four | <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | tan Chevrolet Tahoe |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim age | <NEWLINE> | declared dead | Newark | Johnard | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | near the intersection of Rudisill Boulevard and Clinton | early Friday morning | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | Suspect age | <NEWLINE> | arrested | Cameron Joyner | 22 |
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim age | <NEWLINE> | struck and killed | Virginia | man | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim gender | Victim age | <NEWLINE> | Florence | Fredrick Asher | 25-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | dark vehicle |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | <NEWLINE> | condition | officers | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shootout | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | shot & doctors don't know if he'll be able to walk again | bystander | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | <NEWLINE> | Priscilla Avenue | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | blue Ford Fusion |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | Tahoe |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim gender | Victim age | <NEWLINE> | 7200 block of South Langley Avenue | Antian Hardmon | 25-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | Parma's Hillside Middle School | Nov. 25 | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim age | <NEWLINE> | killed | Abdel Bashiti | 12-year-old | <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | <NEWLINE> | accused | five |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim age | <NEWLINE> | shot and killed | Dan Duignam | 21-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | in documented gang member | One | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | silver SUV |
+Accident: <NEWLINE> | Accident date | <NEWLINE> | Monday morning | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim gender | Victim age | <NEWLINE> | shot and killed | Lurbis Elena Vence | Four-year-old | Molino, Colombia | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident type | <NEWLINE> | park | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | white SUV |
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | corner of 8th and H Street NE | around 10:50 tonight | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim age | <NEWLINE> | shot in his leg | adult | male | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim number | <NEWLINE> | shot | men | two | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | <NEWLINE> | subdued, disarmed and forced from the bus | Williams |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | Suspect age | <NEWLINE> | in custody | Anthony James | 30 |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | Suspect age | <NEWLINE> | face a charge |rian Perkins | 24 |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect age | <NEWLINE> | charged | teens |
+Accident: <NEWLINE> | Accident address | Accident type | <NEWLINE> | gas station in Laredo | shootout | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | shot & dead | Three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim age | <NEWLINE> | lying in the backyard | woman | 28-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | <NEWLINE> | Rickie Forehand | 13-year old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | are expected to survive | All | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim gender | Victim age | <NEWLINE> | veteran civil engineer | Katherine Nixon | 42-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim gender | Victim age | <NEWLINE> | Tuskegee | 20-year-old | Evan Mikale Wilson | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | <NEWLINE> | severe knife wounds to their necks | aunt and uncle | <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | <NEWLINE> | wanted | man |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | Victim gender | Victim number | <NEWLINE> | stable condition | Lansing | 18-year-old | woman | <NEWLINE> | in stable condition | Jackson | 22-year-old | woman | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | Victim gender | Victim number | <NEWLINE> | treated at hospitals and released | 21-year-old Lansing | man | a | <NEWLINE> | treated at hospitals and released | 29-year-old Lansing | woman | a | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | Suspect gender | <NEWLINE> | light-colored Nissan sedan | men |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | taken to a hospital | fourth | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | armed carjacking attempt | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | <NEWLINE> | deaths | aunt and uncle | <NEWLINE> Suspect: <NEWLINE> | Suspect name | <NEWLINE> | Vance |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | silver 2011 Ford Fusion |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | bike |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | dark- colored BMW |
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect based | Suspect age | <NEWLINE> | Evansville | teen |
+Accident: <NEWLINE> | Accident date | Accident type | <NEWLINE> | early Sunday morning | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim gender | Victim age | <NEWLINE> | died | Tayveon Williams | 22-year-old | Jackson | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | in front of a store in the 4200 block of West Madison Street, near Keeler Avenue | just before 3 p.m. | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect vehicle | <NEWLINE> | white sedan |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | parking lot outside the club | early Wednesday | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim age | <NEWLINE> | died | Michael Howard | 20 | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | <NEWLINE> | behind bars | Edwin Joseph and Jacquay Howard |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect name | <NEWLINE> | Taylor |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim age | <NEWLINE> | injured | Quenterius Finch | 23-year-old | <NEWLINE> | injured | Cedric Finch | 28-year-old | <NEWLINE> | injured | Chauncey Thomas | 21-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect name | Suspect age | <NEWLINE> | A-Mier Taylor | 17-year-old |
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | in the area of Mass Ave and Proctor Street | early morning hours of December 9, 2017 | non-fatal shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect based | Suspect status | Suspect name | Suspect age | <NEWLINE> | Dorchester | arrested | Shawquan D. Jackson | 28-year-old |
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim age | <NEWLINE> | pronounced dead | Shakeen Woodson | Newark | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident type | <NEWLINE> | outside Club Dew Drop on Euclid Avenue at Ivanhoe Road | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim age | <NEWLINE> | dead | man | one | <NEWLINE> | wounded |  | four | <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | Suspect age | <NEWLINE> | sought | Aundre Smith | 19 | <NEWLINE> | Tony Ricks | 21 |  |
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | outside of a bar | last weekend | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | gunfire | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | struck by gunfire | social worker and a security guard | <NEWLINE> | shot in the arm | both | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect name | Suspect age | <NEWLINE> | Gerald Pinkston | 22-year-old |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim based | Victim age | <NEWLINE> | Suitland High School in Forestville, Maryland | freshman | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | <NEWLINE> | sentenced | Dear |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | Suspect age | <NEWLINE> | aggravated murder | Larissa Harris | 21 | <NEWLINE> | face aggravated murder | Marvin Harris | 18 |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim gender | Victim age | <NEWLINE> | died | Derron Roane | 25 | Elizabeth | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | I-5 over the Grapevine | around 1:30 a.m. | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim number | <NEWLINE> | shot & pronounced dead | men | two | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | <NEWLINE> | transported to John Peter Smith Hospital | adults | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim gender | Victim age | <NEWLINE> | shot | Sandusky | man | 30-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim number | <NEWLINE> | dead | men | Two | <NEWLINE> | wounded |  | two | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | incident | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect weapon | <NEWLINE> | two different calibers |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim gender | <NEWLINE> | injured | Duhart | Four | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | identified | Three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | stable condition for treatment | All | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | <NEWLINE> | transported to local hospitals & non-life threatening injuries | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect name | <NEWLINE> | Whitley |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | <NEWLINE> | into custody | Moss |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | Victim gender | Victim number | <NEWLINE> | shot in left leg | 27-year-old | man | a | <NEWLINE> | shot twice in the right leg | 21-year-old | man | a | <NEWLINE> | shot in the right knee | 19-year-old | woman | a | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | Buda Lounge on Flatbush Avenue | just before 3 a.m. | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | taken to a hospital & in good condition | Three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect weapon | <NEWLINE> | gun |
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | South Los Angeles | Saturday | apparent gang-related shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | hit by gunfire | Three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | <NEWLINE> | in custody | charged |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | Victim gender | Victim age | <NEWLINE> | hit in her stomach | A | woman | 25-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim number | <NEWLINE> | injured | females | Three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect weapon | <NEWLINE> | gun |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | hospitalized | three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | Victim gender | Victim number | <NEWLINE> | three times in the left leg | 20-year-old | man | a | <NEWLINE> | once in the right arm and right leg | 22-year-old | man | a | <NEWLINE> | once in the left foot | 31-year-old | man | a | <NEWLINE> Suspect: <NEWLINE>

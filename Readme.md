@@ -30,7 +30,7 @@ Here are the steps to train the model and generate the previews by yourself:
 2. Enter the working directory `surrogate_model/` and convert labeled samples to sequences (See `convert.py`). Note that our way to serialize the table is different from the original repo. This step creates data under `surrogate_data/`.
 3. Configure and run `bash preprocess.sh`, which adds files to `surrogate_data/`.
 4. Configure and run `bash train.sh`, which generates `{domain}_{level}_{seed}/checkpoint_average_best-3.pt`.
-   - You can download some of the trained models at [We are setting up the link](...).
+   - You can download some of the trained models at [tear-surrogate-model](https://huggingface.co/tlice/tear-surrogate-model/tree/main).
    - If this is supposed to be an updated model after recommendation, please set `--restore-file` to the previous checkpoint. Note that the IO to disk for storing checkpoints is the efficiency bottleneck compared to the training, so you may want to set `custom_train.py/min_train_epoch` to ignore some earlier checkpoints and accelerate the process.
 5. Configure and run `bash infer.sh`, which adds files to `{domain}_{level}_{seed}/`.
 6. Generate previews based on the inference (See `convert.py`).

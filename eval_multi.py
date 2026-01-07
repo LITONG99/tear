@@ -137,7 +137,7 @@ def compute_metrics_multi(hyp_data, tgt_data):
 
                     
                     column_weight.append(len(tgt_headers))
-                    cell_weight.append(len(tgt_content))
+
                     row_weight.append(len(tgt_entity))
 
                     if len(hyp_entity)==0:
@@ -162,8 +162,11 @@ def compute_metrics_multi(hyp_data, tgt_data):
                         entity_score['structured-r'].append(cr)
                         entity_score['structured-f'].append(cf)
 
+            if sum(row_weight)==0 or sum(column_weight)==0:
+                continue
             row_weight = np.array(row_weight)/sum(row_weight)
             column_weight = np.array(column_weight)/sum(column_weight)
+
             for k in entity_score:
                 tmp = np.array(entity_score[k])
                 # weighted: only for multi-table cases, averaged by num of header / record

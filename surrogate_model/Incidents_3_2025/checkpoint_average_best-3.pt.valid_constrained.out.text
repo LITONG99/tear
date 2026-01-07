@@ -1,0 +1,100 @@
+Accident: <NEWLINE> | Accident address | <NEWLINE> | Northwest D.C. | <NEWLINE> Victim: <NEWLINE> | Victim based | <NEWLINE> | lived in Northwest D.C. | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | <NEWLINE> | Pembroke Meadows Civic League, a community in Virginia Beach of more than 400 homes | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident type | <NEWLINE> | Capitol Heights, Maryland | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | dead | two | <NEWLINE> | injured | four | <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | arrest |
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooter | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | arrested |
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | outside the Sawmill Saloon | January 2018 | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim number | <NEWLINE> | dead | men | two | <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | sentenced |
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | restaurant parking lot at 9550 Bissonnet St. | around 5:40 p.m. | <NEWLINE> Victim: <NEWLINE> | Victim age | Victim number | <NEWLINE> | ranging in ages from 19 to 23 | four | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim gender | Victim age | <NEWLINE> | dead | Johnard | Newark | a | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | expected to be arraigned |
+Accident: <NEWLINE> | Accident address | Accident type | <NEWLINE> | outside a party | double homicide | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect age | <NEWLINE> | 19-year-old |
+Accident: <NEWLINE> | Accident address | <NEWLINE> | Priscilla Avenue | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim number | <NEWLINE> | on the porch | men | three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim gender | Victim number | <NEWLINE> | men | at least two | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | a block away | last weekend | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim status | Victim gender | <NEWLINE> | shot and killed | Dan Duignam | 21-year-old | Temple | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | subdued, disarmed and forced from the bus |
+Accident: <NEWLINE> | Accident date | Accident type | <NEWLINE> | January | deaths | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim status | Victim gender | <NEWLINE> | Deron Gray | 24-year-old | deaths |  | <NEWLINE> | James Ratcliffe | 50-year-old | deaths |  | <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | facing murder, robbery and drug dealing |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | expected to survive | Three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | silver 2011 Ford Fusion | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | drove away |
+Accident: <NEWLINE> | Accident date | Accident type | <NEWLINE> | early Sunday morning | shooting | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim based | Victim status | Victim gender | <NEWLINE> | Tayveon Williams | died | 22-year-old | Jackson | died | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | <NEWLINE> | north on Interstate 5 from Los Angeles to San Francisco | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim gender | Victim age | <NEWLINE> | pronounced dead at University Hospital | Shakeen Woodson | Newark |  | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | <NEWLINE> | in the park | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | shot in the arm | social worker | <NEWLINE> | struck by gunfire |  | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect age | <NEWLINE> | charged | 21 | <NEWLINE> | charged | 18 | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim number | Victim name | Victim age | Victim status | Victim gender | <NEWLINE> | died | Derron Roane | 25 | of Elizabeth | died | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim status | Victim gender | Victim number | <NEWLINE> | Joshua N. Barkley | 19, 51-year-old | Ricky Whitlock |  | 43 | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | South Bedford Avenue near Cherry Street | late night | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | accused |
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim number | <NEWLINE> | struck and killed | man | a | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | <NEWLINE> | club | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | condition of the officers | unknown | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | <NEWLINE> | 7200 block of South Langley Avenue | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | <NEWLINE> | Antian Hardmon | 25-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | corner of 8th and H Street NE | around 10:50 tonight | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim age | <NEWLINE> | shot in his leg | adult | male | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | charged |
+Accident: <NEWLINE> | Accident address | Accident type | <NEWLINE> | gas station in Laredo | shootout | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | shot | Two | <NEWLINE> | dead | suspect | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim status | Victim gender | <NEWLINE> | Katherine Nixon | 42-year-old | veteran civil engineer | City of Virginia Beach | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect age | <NEWLINE> | found guilty | 33 |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | Victim gender | Victim number | <NEWLINE> | stable condition | 18-year-old | Lansing | woman | <NEWLINE> | in stable condition | 22-year-old | Jackson | man | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim gender | <NEWLINE> | men | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | taken to a hospital | fourth | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident type | <NEWLINE> | western Oklahoma | armed carjacking attempt | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | deaths | aunt and uncle | <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | linked |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | in custody |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | charged |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | Victim gender | <NEWLINE> | killing | 50-year-old | girlfriend | <NEWLINE> Suspect: <NEWLINE> | Suspect age | <NEWLINE> | 55-year-old |
+Accident: <NEWLINE> | Accident type | <NEWLINE> | silver 2007 Mitsubishi Eclipse | <NEWLINE> Victim: <NEWLINE> | Victim name | <NEWLINE> | Vance | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim status | Victim gender | <NEWLINE> | died from his injuries | Jon Booker | 25-year-old | photographer | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect age | <NEWLINE> | taken into custody | 22-year-old |
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | Tangeray Tavern on the 900 block of Pratt Street | early Sunday evening | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim gender | Victim age | <NEWLINE> | Fredericksburg, Virginia | Brian Dale-Parker | 34 | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | charged |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim based | Victim name | Victim age | <NEWLINE> | Fredrick Asher | 25-year-old | Florence | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | Parma's Hillside Middle School | Nov. 25 | shooting | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim gender | Victim age | <NEWLINE> | Abdel Bashiti | 12-year-old | killed | <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | accused |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | in documented gang member | One | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident date | <NEWLINE> | Monday morning | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim based | Victim status | Victim gender | <NEWLINE> | shot and killed | Lurbis Elena Vence | of Molino, Colombia | Lurbis Elena Vence |-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect age | <NEWLINE> | in custody | 30 | <NEWLINE> Suspect status | <NEWLINE> | charged |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | charged |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | Victim gender | Victim age | <NEWLINE> | gunshot wounds to her chest and arm | woman | 28-year-old | Homewood | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect name | Suspect age | <NEWLINE> | facing a slew of felonies |  | 26 | <NEWLINE> | facing a slew of felonies | David Sanders | 26 | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim based | Victim status | Victim based | Evan Mikale Wilson | 20-year-old | Tuskegee | killed | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | Victim gender | Victim number | <NEWLINE> | treated at hospitals and released | 21-year-old & Lansing | man | A | <NEWLINE> | treated at hospitals and released | 29-year-old & Lansing | woman | a | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim status | Victim gender | Victim number | <NEWLINE> | injured | Quenterius Finch | 23-year-old | Jonesboro |  | <NEWLINE> | injured | Cedric Finch | 28-year-old | Jonesboro |  | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | outside of a bar | last weekend | fatal shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | arrest |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | sentenced |
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | Aurora apartment complex | late Saturday night | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | injured | five | <NEWLINE> Suspect: <NEWLINE> | Suspect status | Suspect age | <NEWLINE> | arrested | 16-year-old |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | arrested |
+Accident: <NEWLINE> | Accident type | <NEWLINE> | outside playing dice | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | killing | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim status | Victim gender | <NEWLINE> | Todd James Webb | 14-year-old | killed |  | <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | charged |
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim status | Victim gender | <NEWLINE> | killed | a | man | 29-year-old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | held |
+Accident: <NEWLINE> | Accident type | <NEWLINE> | black SUV | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shootout | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | shot & don't know if he'll be able to walk again | bystander | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | <NEWLINE> | westbound on Bissonnet | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident type | <NEWLINE> | park | shooting | <NEWLINE> Victim: <NEWLINE> | Victim gender | Victim number | <NEWLINE> | woman | a | <NEWLINE> | man | a | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | <NEWLINE> | 5900 block of Hillen Road in Baltimore | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim based | Victim status | Victim gender | <NEWLINE> | Rickie Forehand | 13-year old | killed | Rickie Forehand |  | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | severe knife wounds to their necks consistent with someone attempting to sever their heads | aunt and uncle | <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | wanted |
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | in front of a store in the 4200 block of West Madison Street, near Keeler Avenue | just before 3 p.m. | shots were fired | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | parking lot outside the club | early Wednesday | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim age | Victim based | Victim status | Victim gender | <NEWLINE> | died | John Howard | 20 | South Euclid | died | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | arrested |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | <NEWLINE> | freshman | Suitland High School in Forestville, Maryland | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | San Jose home | late Saturday night | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim number | <NEWLINE> | non-life-threatening injuries | males | Three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> | Victim name | Victim status | Victim gender | Victim number | <NEWLINE> | Ketron's | injured |  | one | <NEWLINE> | Aleke | injured |  | one | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim gender | <NEWLINE> | struck several times |ale-Parker | wearing a "Wheels of Soul" jacket | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | <NEWLINE> | University City apartment | early Saturday | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | Victim gender | Victim number | <NEWLINE> | killed | 20-year-old | man | three | <NEWLINE> | non-life threatening gunshot wounds |  | men | three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | Accident date | Accident type | <NEWLINE> | northwest Oklahoma City | weekend | shooting | <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | died | second | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim gender | Victim number | <NEWLINE> | female | a | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim age | <NEWLINE> | 22 years old | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident type | <NEWLINE> | shooting | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> | Accident address | <NEWLINE> | northwestern Arizona | <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | taken into custody |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | on the run |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim number | <NEWLINE> | four | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | Victim age | <NEWLINE> | gunshot wound to the chest | Infinite Corbetts | 18 | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> <NEWLINE> Suspect: <NEWLINE> | Suspect status | <NEWLINE> | staying in Branford |
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | non-life-threatening gunshot wound | fifth | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim age | Victim gender | Victim number | <NEWLINE> | nonlife-threatening gunshot wounds | 21-year-old | males | two | <NEWLINE> | nonlife-threatening gunshot wounds | 16-year-old | female | a | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | taken to area hospitals for treatment | Three | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | <NEWLINE> | possible life-threatening injuries | Austin | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim number | <NEWLINE> | treated and released | Two | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim number | <NEWLINE> | shot in their legs | men | one | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim name | <NEWLINE> | pronounced dead | Austin | <NEWLINE> Suspect: <NEWLINE>
+Accident: <NEWLINE> <NEWLINE> Victim: <NEWLINE> | Victim status | Victim gender | Victim number | <NEWLINE> | shot in the arm and in stable condition | man | One | <NEWLINE> Suspect: <NEWLINE>

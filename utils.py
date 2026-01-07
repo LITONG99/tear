@@ -105,7 +105,7 @@ def filter_empty_data(data):
 
     return new_data 
 
-def load_data(domain, data_path, level, use_small_test=True, update=[]):
+def load_data(domain, data_path, level, update=[]):
     with open(f"{data_path}/{domain}_multi_clean.json", 'r') as fp:
         data = json.load(fp)
 
@@ -116,8 +116,6 @@ def load_data(domain, data_path, level, use_small_test=True, update=[]):
         split = json.load(fp)
 
     train_index, valid_index, test_index = split[f'train{level}_index'], split[f'valid{level}_index'], split[f'test{level}_index']
-    if use_small_test:
-        test_index = test_index[200:208]
 
     if level == '0':
         headers = set(schema[f'train1']+ schema['validation']+ schema[f'test1'])

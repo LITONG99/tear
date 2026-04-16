@@ -4,21 +4,21 @@ This is the official code and supplementary materials for our paper: **TEAR: Tab
 
 ---
 
-## :notebook: Dataset
+## Dataset
 Our dataset is a revised version, with original texts collected by [CACAPO-English](https://github.com/TallChris91/CACAPO-Dataset). Please give credit to the creators if you use the data.
 
 The data is under `data/`. The `_clean.json` is the original table annotations; `_split.json` contains sample splits for complete schema split (level 0), and exploratory levels 1, 2, and 3; and the `_sd.json` contains the known attributes / new attributes splits for exploratory levels 1, 2, and 3. Under each exploratory level, we ensure that each ground truth test attribute appears in some of the test texts, and each ground truth validation attribute also appears in some of the validation texts, so a reasonable text-driven attribute recommendation system could discover them from text.
 
 ---
 
-## :cloud: Dependencies
+## Dependencies
 Please refer to `requirements.txt`.
 
 ---
 
-## :snowman: Preparation
+## Preparation
 
-### 1. Obtain surrogate model and previews
+### 1. Obtain the surrogate model and previews
 #### :snowflake: Use our previews
 The surrogate model is used for proactive preview generation for demonstration retrieval and extraction prompting. We provide the previews at `surrogate_model/{domain}_{level}_{random_seed}/{header or value}_previews_{stage}.json`.
 
@@ -51,15 +51,15 @@ If you use other datasets, you will need to provide some meta information about 
 
 ---
 
-## :green_heart: Table Extraction
+## Table Extraction
 Configure the `--data_path`, `--work_dir`, `--embedding_path`, `--surrogate_checkpoint` and run:
 ```bash
 python main.py --task extract --level 0
 ```
 ---
 
-## :heart: Attribute Recommendation 
-Under exploratory setting, level 1, 2 and 3.
+## Attribute Recommendation 
+Under an exploratory setting, levels 1, 2, and 3.
 ```bash
 python main.py --task extract --domain Weather --level 3
 python main.py --task discover --domain Weather --level 3 --use_extracted <extracted-table>

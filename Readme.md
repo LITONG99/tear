@@ -46,7 +46,7 @@ If you use other datasets, you will need to provide some meta information about 
 - `domain_entities`: Type of tables in the dataset.
 - `schema_text`: The complete schema. If an attribute is not known under some exploratory level, our code will hide it during execution even if it is listed here.
 - `discover_schema`: For AR, the tables you would like to expand columns.
-- `relevance_prefix`: For AR, the Descriptive Prefix for that dataset.
+- `relevance_prefix`: For AR, the Schema Prefix for that dataset.
 - `global_attribute_definition`: For AR, the definition of attributes for the known schema. If an attribute is never known under any exploratory level, its item will not be used so you can omit it.
 
 ---

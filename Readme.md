@@ -5,9 +5,8 @@ This is the official code and supplementary materials for our paper: **TEAR: Tab
 ---
 
 ## Dataset
-Our dataset is a revised version, with original texts collected by [CACAPO-English](https://github.com/TallChris91/CACAPO-Dataset). Please give credit to the creators if you use the data.
 
-The data is under `data/`. The `_clean.json` is the original table annotations; `_split.json` contains sample splits for complete schema split (level 0), and exploratory levels 1, 2, and 3; and the `_sd.json` contains the known attributes / new attributes splits for exploratory levels 1, 2, and 3. Under each exploratory level, we ensure that each ground truth test attribute appears in some of the test texts, and each ground truth validation attribute also appears in some of the validation texts, so a reasonable text-driven attribute recommendation system could discover them from text.
+The data is under `data/`. The `_clean.json` is the reviewed data; `_split.json` contains sample splits for complete schema split (level 0), and exploratory levels 1, 2, and 3; and the `_sd.json` contains the known attributes / new attributes splits for exploratory levels 1, 2, and 3. Under each exploratory level, we ensure that each ground truth test attribute appears in some of the test texts, and each ground truth validation attribute also appears in some of the validation texts, so a reasonable text-driven attribute recommendation system could discover them from text. Our dataset is a revised version, with original texts collected by [CACAPO-English](https://github.com/TallChris91/CACAPO-Dataset). Please give credits to the creators if you use the data.
 
 ---
 
@@ -23,7 +22,7 @@ Please refer to `requirements.txt`.
 The surrogate model is used for proactive preview generation for demonstration retrieval and extraction prompting. We provide the previews at `surrogate_model/{domain}_{level}_{random_seed}/{header or value}_previews_{stage}.json`.
 
 #### :boom: Train the model and generate previews by yourself
-The code to obtain the model is developed based on this [repo](https://github.com/shirley-wu/text_to_table). *Please also refer to the original repo. You may need to set up another environment.*
+The code to obtain the model is developed based on this [repo](https://github.com/shirley-wu/text_to_table). *Please also refer to the original repo to set up environment.*
 
 Here are the steps to train the model and generate the previews by yourself:
 1. Download pretrained [bart.large](https://huggingface.co/facebook/bart-large).
@@ -59,7 +58,9 @@ python main.py --task extract --level 0
 ---
 
 ## Attribute Recommendation 
-Under an exploratory setting, levels 1, 2, and 3.
+
+Under exploratory setting, level 1, 2 and 3.
+
 ```bash
 python main.py --task extract --domain Weather --level 3
 python main.py --task discover --domain Weather --level 3 --use_extracted <extracted-table>

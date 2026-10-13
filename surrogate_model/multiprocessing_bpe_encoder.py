@@ -1,15 +1,8 @@
-#!/usr/bin/env python
-# Copyright (c) Facebook, Inc. and its affiliates.
-# All rights reserved.
-#
-# This source code is licensed under the license found in the
-# LICENSE file in the root directory of this source tree.
-
 import argparse
 import contextlib
 import sys
 
-sys.path.append('/export/data/tlice/schema_data/text_to_table/fairseq')
+#sys.path.append('xxx/fairseq') your path to 
 from collections import Counter
 from multiprocessing import Pool
 

@@ -29,7 +29,7 @@ def get_delta(sim):
     return eps_2
 
 
-def get_suspicious_sets(sim, k, delta, eps=0):
+def get_low_disversity_sets(sim, k, delta, eps=0):
     m = len(sim)
 
     H = set(range(0, k))
@@ -123,8 +123,8 @@ def get_suspicious_sets(sim, k, delta, eps=0):
     res = [[k, res[k]] for k in res]
     meta_info = {
         'pruning time':  round(time.perf_counter() - overall_start_time, 4),
-        'max_suspecious_size':  start_len -1,
-        'num_suspecious_set': len(res)
+        'max_low_disversity_size':  start_len -1,
+        'num_low_disversity_set': len(res)
     }
     print(meta_info)
     return res, meta_info
@@ -150,7 +150,9 @@ def hybrid_integration_strategy(args, known_headers, definition, new_headers):
     
     header_names = []
     for h in known_headers: header_names.append(h)
-    for h in new_headers: header_names.append(h)
+    for h in new_headers: 
+        if h in definition: # generate valid definition
+            header_names.append(h)
 
     # compute delta
     sim = calc_similarity_matrix(header_names, header_names, metric='c')
@@ -160,10 +162,10 @@ def hybrid_integration_strategy(args, known_headers, definition, new_headers):
     delta = get_delta(sim[:k, :k])
     print('estimated delta:', delta)
 
-    suspicious_set_2, meta_info = get_suspicious_sets(sim, k, delta, args.delta_correction)  
+    low_disversity_set_2, meta_info = get_low_disversity_sets(sim, k, delta, args.delta_correction)  
 
     # initialize W=P*
-    W = [set(_[0]) for _ in suspicious_set_2] + [{i} for i in range(n)]
+    W = [set(_[0]) for _ in low_disversity_set_2] + [{i} for i in range(n)]
     B = set(range(n))
     candidates = {}
   
@@ -189,7 +191,7 @@ def hybrid_integration_strategy(args, known_headers, definition, new_headers):
                 judge_term = get_response_from_llm(args, {1: merge_set}, definition, labeled_text=None, labeled_table=None, 
                                                    save_response=False, aux_data=aux_data, response_type='term', show_progress=False)
                 llm_call += 1
-                if judge_term[merge_set[0]]!='Two': # rsp=yes
+                if judge_term[1]!='Two': # rsp=yes
                     judge_one += 1
                     W = [w for w in W if len(q & w)==0]
                     B = B-q
@@ -210,7 +212,8 @@ def hybrid_integration_strategy(args, known_headers, definition, new_headers):
 
     meta_info.update({'llm_call': llm_call, 'llm_judge_one':judge_one, 'llm_judge_two': judge_two,
                        'delta_correction':float(args.delta_correction)})
-    
+
+    args.task = 'integrate'
     return candidates, meta_info
 
 
@@ -256,7 +259,7 @@ def aggregated_relevance(args, candidates, aux, save_name, method):
     return sorted(final_scores.items(), key=lambda x: x[1], reverse=True)
 
 
-def rank_by_score(args, prediction, test_headers=None, save_name=None, method='relevance', aux={}):
+def rank_by_score(args, prediction, save_name=None, method='relevance', aux={}):
   
     candidates = list(prediction.keys())
 

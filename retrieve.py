@@ -8,7 +8,7 @@ from eval_multi import calc_similarity_matrix
 def set_sim_qk(a: tuple, b:tuple):
     seta = set(a)
     setb = set(b)
-    return len(seta ^ setb)+0.01*len(setb-seta)+1e-6
+    return len(seta & setb)+0.01*len(setb-seta)+1e-6
 
 def retrieve(args, query_text, query_headers, query_values, labeled_text, labeled_data, device='cuda'): 
     retrieved = defaultdict(list)
@@ -74,34 +74,48 @@ def retrieve_by_field(labeled_text, labeled_data, test_index, test_infer_table, 
     for index in labeled_index:
         d = get_headers_in_table(labeled_data[index], multiple_entity=True)
         labeled_groups[tuple(sorted(d))].append(index)
-    key_combinations = list(labeled_groups.keys()) 
-    test_key_combinations = {_:i for i, _ in enumerate(test_groups.keys())}
 
-    sim = [[set_sim_qk(test_comb, comb) for comb in key_combinations] for test_comb in test_key_combinations]
-    _, numerical_comb_indices = torch.topk(torch.Tensor(sim), fs, dim=1)
+    labeled_combs = list(labeled_groups.keys())
+    test_combs = list(test_groups.keys())
+    test_comb_to_id = {comb: i for i, comb in enumerate(test_combs)}
+
+    sim_matrix = torch.tensor([
+        [set_sim_qk(test_comb, labeled_comb) for labeled_comb in labeled_combs]
+        for test_comb in test_combs
+    ], dtype=torch.float32)
+
+    _, topk_indices = torch.topk(sim_matrix, k=fs, dim=1, largest=True)
+
     
-    for index in tqdm(test_index, desc='Retrieving-header-utility'):
-        if index in test_infer_table:
-            test_comb = test_infer_table[index]
-            best_matched_combs = numerical_comb_indices[test_key_combinations[test_comb]]
+    for idx in tqdm(test_index, desc='Retrieving-header-utility'):
+        if idx not in test_infer_table:
+            res[idx] = []
+            continue
+
+        test_comb = test_infer_table[idx]
+        test_comb_id = test_comb_to_id[test_comb]
+
+        best_labeled_comb_ids = topk_indices[test_comb_id]
    
-            current_shot = 0
-            for comb in best_matched_combs:
-                comb = key_combinations[comb]
-                random.shuffle(labeled_groups[comb])
-                res[index] += labeled_groups[comb][:fs-current_shot] 
-                current_shot = len(res[index])
-                if current_shot>=fs: break
-        else:
-            res[index] += []
+        current_shot = 0
+        for comb_id in best_labeled_comb_ids:
+            labeled_comb = labeled_combs[comb_id]
+
+            candidates = labeled_groups[labeled_comb]
+            if not candidates:
+                continue
+
+            random.shuffle(candidates)
+            need = fs - current_shot
+            res[idx] += candidates[:need]
+
+            current_shot = len(res[idx])
+            if current_shot >= fs:
+                break
 
     return res
 
 def sample_context(k, texts, values, mode= 'text_length'):
-    '''
-    - texts: List
-    - values: List[List]
-    '''
     assert len(texts) == len(values)
     
     if mode=='text_length': # longer text, larger weight

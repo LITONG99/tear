@@ -1,12 +1,12 @@
 import argparse 
 import os
-os.environ["CUDA_VISIBLE_DEVICES"]='0'
+#os.environ["CUDA_VISIBLE_DEVICES"]='0'
 
 from utils import load_data, fix_seed, save_at, filter_empty_data, load_infer_headers, \
-    get_headers_in_table, load_from, load_tagged_values, get_value_for_header_in_table, load_header
+    get_headers_in_table, load_from, load_tagged_values, get_value_for_header_in_table, load_header, add_row_index
 from retrieve import get_demonstration, sample_context 
 
-from schema import process_schema_text, process_definition_examples, definition_schema, discover_schema,   domain_entities
+from schema import process_schema_text, process_definition_examples, definition_schema, discover_schema,  domain_entities
 from eval_multi import compute_metrics_multi, compute_metrics_for_headers
 import random
 
@@ -92,6 +92,8 @@ def discover(args):
 
 
     discovered= get_response_from_llm(args, test_text, retrieved_examples,  labeled_text, labeled_data,  save_response=True, aux_data=aux_data)
+    if args.domain=='Conversation':
+        discovered = add_row_index(discovered)
     discovered['extracted_version'] = args.use_extracted
 
     save_at(discovered, f"{args.work_dir}/{args.task}_output", f'{exp_name}_table.json')
@@ -105,7 +107,7 @@ def discover(args):
 
     ## 2. Writing definition as condensed context
     context = {}
-    # Sample context for known header+
+    # Sample context for known header
     for h in labeled_headers:
         texts = [labeled_text[idx] for idx in entity_old_headers[h]]
         values = [get_value_for_header_in_table(labeled_data[idx], h, multiple_entity=True) for idx in entity_old_headers[h]]
@@ -117,7 +119,9 @@ def discover(args):
         values = [get_value_for_header_in_table(discovered[idx], h, multiple_entity=True) for idx in entity_new_headers[h]]
         context[h] = sample_context(args.define_context_sample_n, texts=texts, values=values)
 
-    max_example_headers = 10
+
+    max_example_headers = args.max_example_headers
+    
     tmp = [h for h in entity_old_headers]
     if len(tmp)>max_example_headers:
         random.shuffle(tmp)
@@ -189,23 +193,25 @@ def ranking(args):
         test_headers = valid_headers
 
     if args.strategy =='none':
+        save_name = None
         tmp = load_from(f'{args.work_dir}/define_output', f"{exp_name}_proposals.json")
+        tmp['num_original'] = len(tmp['attributes'])
     elif args.strategy == 'hybrid':
         save_name = f'{exp_name}_{args.delta_correction}_{args.diversity_kernel}'
-        tmp = load_from(f'{args.work_dir}/judge_output', f"{exp_name}_{args.strategy}_{args.delta_correction}_{args.diversity_kernel}.json")
+        tmp = load_from(f'{args.work_dir}/integrate_output', f"{exp_name}_{args.strategy}_{args.delta_correction}_{args.diversity_kernel}.json")
     else: 
         raise NotImplementedError
     
     aux_data = {'labeled_headers':labeled_headers} 
-    if 'frequency' in tmp:
-        aux_data['frequency'] = tmp['frequency']
-
-    test_headers = [h for h in test_headers if not h in labeled_headers]
-    ranked = rank_by_score(args, tmp['attributes'], test_headers, save_name, method=args.ranking_method, aux=aux_data)
+    if 'frequency' in tmp: aux_data['frequency'] = tmp['frequency']
+    
+    ranked = rank_by_score(args, tmp['attributes'], save_name, method=args.ranking_method, aux=aux_data)
     
     ranked_ql = [h for h , s in ranked]
     metric_path = f'{save_name}_{args.ranking_method}_{args.dp_version}_metrics.json'
     metrics = {}
+
+    test_headers = [h for h in test_headers if not h in labeled_headers]
     if test_headers: 
         # compute recall-AUC
         metrics.update(compute_metrics_for_headers(ranked_ql, test_headers, max_n=tmp['num_original']))
@@ -223,16 +229,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--task', type=str, default='rank', choices=['extract', 'discover', 'integrate', 'rank'])
     parser.add_argument('--update', type=bool, default=False, help='For extraction with selected text-dirven attributes.')
-    parser.add_argument("--stage", type=str, default='valid', choices=['valid', 'test'], 
+    parser.add_argument("--stage", type=str, default='test', choices=['valid', 'test'], 
                                                             help='If test, the valid and training data are concatenated as labeled sample pool.')
 
     parser.add_argument("--data_path", type=str, default='data')
-    parser.add_argument("--work_dir", type=str, default='')
-    parser.add_argument("--domain", type=str, default='Incidents', choices=['Incidents', 'Weather'])
+    parser.add_argument("--work_dir", type=str, default='/tear')
+    parser.add_argument("--domain", type=str, default='Conversation', choices=['Incidents', 'Weather','Conversation'])
     parser.add_argument("--level", type=str, default='3', help='0 for complete schema', choices=['0','1','2','3'])
 
     # backbone
-    parser.add_argument("--llm_model", type=str, default='Llama', choices=['Llama', 'Qwen']) 
+    parser.add_argument("--llm_model", type=str, default='Llama8', choices=['Llama70','Llama8', 'Qwen']) 
     parser.add_argument("--llm_max_token", type=int, default=1024) 
     parser.add_argument("--llm_temperature", type=int, default=0.5) 
     parser.add_argument("--llm_sample_p", type=int, default=0.5)
@@ -242,49 +248,51 @@ if __name__ == "__main__":
     
     # previews and Referecing Module
     parser.add_argument("--retrieve", type=str, default='embedding-header-value', help='Referencing Module')
-    parser.add_argument("--few_shot", type=int, default=5)
+    parser.add_argument("--few_shot", type=int, default=3, help='3 for Conversation, 5 for others')
     parser.add_argument("--surrogate_checkpoint", type=str, default='surrogate_model/{domain}_{level}_{llm_model}{random_seed}')
-    parser.add_argument("--embedding_model_dir", type=str, default='')
+    parser.add_argument("--embedding_model_dir", type=str, default='/mistral', help='only used for MSS baseline')
     parser.add_argument("--embedding_path", type=str, default='embedding')
 
     # discovery
-    parser.add_argument("--use_extracted", type=str, default='{domain}-{llm_model}-lev{level}-[5, 5, 5]-{random_seed}-{stage}', help='update the demonstrations for discovery.') 
+    parser.add_argument("--use_extracted", type=str, default='{domain}-{llm_model}-lev{level}-[{s}, {s}, {s}]-{random_seed}-{stage}', help='update the demonstrations for discovery.') 
+    parser.add_argument("--max_example_headers", type=int, default=3, help='sample n1 known headers, 3 for Conversation, 10 for others') 
+    parser.add_argument("--define_context_sample_n", type=int, default=1, help='sample n2 texts, the definition prompt contain about n1*n2 texts, 1 for Conversation, 5 for others')
     
     # integration
     parser.add_argument("--strategy", type=str, default='hybrid', choices=['none', 'hybrid'])
     parser.add_argument("--diversity_kernel", type=str, default='chrf', choices=['chrf'])
-    parser.add_argument("--define_context_sample_n", type=int, default=5, help='used to define the proposal')
     parser.add_argument("--delta_correction", type=float, default=0, help='delta = estimated_delta(1-correction)')
    
     # ranking
     parser.add_argument("--ranking_method", type=str, default='maximum', help='relevance, similarity, frequency, average, maximum')
     parser.add_argument("--knee_s", type=float, default=1, help='For numerical estimated truncted point of the relevance-based recmendation list. Greater value leads to later knee.')
-    parser.add_argument("--dp_version", type=int, default=10, help='Seed to randomize the permutation order in Descriptive Prefix. Only used for relevance-based ranking.')
+    parser.add_argument("--dp_version", type=int, default=10, help='Seed to randomize the permutation order in Schema Prefix. Only used for relevance-based ranking.')
 
 
     args = parser.parse_args()
     fix_seed(args.random_seed)
     args.retrieve = args.retrieve.split('-')
 
-    args.surrogate_checkpoint = args.surrogate_checkpoint.format(domain=args.domain, level = args.level, 
+    args.surrogate_checkpoint = args.surrogate_checkpoint.format(domain=args.domain, level = args.level,
                                                                      llm_model='', 
                                                                      random_seed=args.random_seed)
                                                                      
-    
-    args.few_shot = [args.few_shot]*len(args.retrieve)
-
     if args.task =='extract':
+        args.few_shot = [args.few_shot]*len(args.retrieve)
         extract(args)
     elif args.task =='discover': 
         assert args.level!='0'
-        args.use_extracted = args.use_extracted.format(domain=args.domain, level = args.level, 
+        args.use_extracted = args.use_extracted.format(domain=args.domain, level = args.level, s = args.few_shot,
                                                         llm_model=args.llm_model, random_seed=args.random_seed,
                                                         stage=args.stage)
+        args.few_shot = [args.few_shot]*len(args.retrieve)
         discover(args)
     elif args.task == 'integrate':  
         assert args.level!='0'
+        args.few_shot = [args.few_shot]*len(args.retrieve)
         integrate(args)
     else: # ranking
         assert args.level != '0' 
         assert args.strategy!= 'hybrid' or args.ranking_method in ['relevance','average','maximum']
+        args.few_shot = [args.few_shot]*len(args.retrieve)
         ranking(args)

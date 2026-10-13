@@ -1,21 +1,18 @@
 import json
 SYSTEM_TEXT_EXTRACTOR = {"role": "system", "content": "You are a helpful AI assistant to extract information from text." }
-
 SYSTEM_TEXT_SUMMARIZER = {"role": "system", "content": "You are a helpful AI assistant to summarize information from context." }
-
-#'You are a helpful AI assistant to identify information from texts.
-
-EXP_1 = {
-'Incidents':'There can be three types of entities mentioned in the texts: Accident, Victim, and Suspect. There is at most one Accident in the text. There can be multiple Victims or Suspects in the text.',
-'Weather':'There is one type of entity mentioned in the texts: Weather. There can be multiple Weather in the text.'
+EXP_EXTRACT = {
+    'Incidents':'There can be three types of entities mentioned in the texts: Accident, Victim, and Suspect. There is at most one Accident in the text. There can be multiple Victims or Suspects in the text.',
+    'Weather':'There is one type of entity mentioned in the texts: Weather. There can be multiple Weather in the text.'
 }
 
-EXP_2 = {
-'Incidents':'There can be three kinds of entities, Accident, Victim, and Suspect mentioned in the texts, and the attribute must belong to one of the entity and relevant to the domain.',
-'Weather':'There is one type of entity, Weather, mentioned in the texts, and the attribute must belong to this entity and relevant to the domain.',
+EXP_DISCOVER = {
+    'Incidents':'There can be three kinds of entities, Accident, Victim, and Suspect mentioned in the texts, and the attribute must belong to one of the entity and relevant to the domain.',
+    'Weather':'There is one type of entity, Weather, mentioned in the texts, and the attribute must belong to this entity and relevant to the domain.',
+    'Conversation': 'There can be five types of entities mentioned in the texts: Attraction, Hotel, Restaurant, Taxi, and Train. And the attribute must belong to one of the entity and relevant to the domain.'
 }
 
-TEMPLATE_1 = '''Your task is to analyze the given text of {domain} and extract the relevant information according to the specified JSON structure below.
+TEMPLATE_EXTRACT = '''Your task is to analyze the given text of {domain} and extract the relevant information according to the specified JSON structure below.
 
 Provide the extracted information in this JSON structure:
 {schema_text}
@@ -25,6 +22,24 @@ Explanations about the JSON structure:
 - {explanation}
 - For each entity, there are multiple attributes.
 - For each attribute, its value is a list of exact substrings of the input text. You should consider every attribute listed in the above structure. If an attribute is not present or cannot be determined, do not include the attribute in the output.
+
+Here are some examples:
+{example_text}
+ 
+Here is the input text:
+{text}
+{hint_prompt}
+'''
+
+TEMPLATE_EXTRACT_CONV = '''Your task is to extract the final dialogue state of the given text. 
+Provide the extracted information in this JSON structure:
+{schema_text}
+
+Explanations about the JSON structure: 
+- Each input text is multi-turn dialogues, involving at most 5 domains: Attraction, Hotel, Restaurant, Taxi, and Train. In each turn, the [SYSTEM] provides relevant information while the [USER] refines their requirements. The conversation progresses through successive information exchanges, clarifications, and confirmations, until the user either successfully completes all intended bookings or terminates the session.
+- You should only extract the final agreed-upon state after each turn, covering all confirmed domains and their relevant attributes. For each domain, consider every attribute listed in the above structure, and only these attributes. For each attribute, its value is an exact substring of the input text.
+- If a domain or an attribute is not mentioned or cannot be determined, do not include it in the output.
+- Output only the JSON data.
 
 Here are some examples:
 {example_text}
@@ -62,6 +77,31 @@ Here is the input text:
 Here is the known information: 
 {extracted_table}
 '''
+TEMPLATE_DISCOVERY_CONV = '''Your task is to analyze the given text and discover new information mentioned in the text.
+
+Provide the discovered information in this JSON structure:
+{schema_text}
+
+Explanations about the JSON structure:
+- Each input text is a multi-turn dialogue, involving at most 5 domains: Attraction, Hotel, Restaurant, Taxi, and Train. In each turn, the [SYSTEM] provides relevant information while the [USER] refines their requirements. The conversation progresses through successive information exchanges, clarifications, and confirmations, until the user either successfully completes all intended bookings or terminates the session.
+- We are interested in the final state after each turn, covering all confirmed domains and their relevant attributes. For each domain, the attributes listed in the above structure are already known. For each attribute, its value is an exact substring of the input text.
+- Output only the JSON data.
+
+Here are some examples:
+{example_text}
+
+Explanations about the examples:
+- Given an input text and the known information, you are encouraged to discover new information for each domain.
+- The new information is qualified as a new attribute if and only if (1) it is relevant and important to the domain, (2) it is unique and not overlapped with the known information, and (3) it has a proper granularity level compared with the known attributes, which means it is not too high-level or low-level concepts.
+- The new attribute must have a meaningful name and actual values from the text.
+- Output as many qualified new attributes as possible.
+Here is the input text:
+{text}
+
+Here is the known information: 
+{extracted_table}
+'''
+
 
 TEMPLATE_DEFINE = '''Your task is to summarize the context of an attribute and write a definition for it. \
 
@@ -93,11 +133,11 @@ Explanation about task:
 - Output only "Two" or "One".
 '''
 
-TEMPLATE_HINT = '''Here are some hints:
-The above text is most likely to contain the attributes: {headers}.
-The above text is most likely to contain the following values: {values}.'''
+TEMPLATE_HINT_META = "Here are some hints:\n"
+TEMPLATE_HINT_HEADER = "The above text is most likely to contain the attributes: {headers}.\n"
+TEMPLATE_HINT_VALUE = "The above text is most likely to contain the following values: {values}.\n"
 
-EXAMPLE_1 = '''
+EXAMPLE_EXTRACT = '''
 Input:
 {text}
 Output:
@@ -113,21 +153,19 @@ Output:
 {table2}'''
 
 
-def compose_example_text(text, table, constrained=False):
-    if constrained:
-        # convert to prompt style
-        table_json = {}
+def compose_example_text(text, table):
+    if '[USER]' in text or '[SYSTEM]' in text: # for conversation
+        prompt_table = {}
         for entity in table:
-            if entity=='Accident':
-                if "0" in table[entity]: table_json[entity] = table[entity]["0"]
-                else: table_json[entity] = {}
+            if 0 in table[entity]:
+                prompt_table[entity] = table[entity][0]
+            
             else:
-                table_json[entity] = []
-                for row in table[entity]:
-                    table_json[entity].append(table[entity][row])
-        example_table = json.dumps(table_json)
-    else: example_table = json.dumps(table)
-    res = EXAMPLE_1.format(text=text, table=example_table)
+                prompt_table[entity] = table[entity]
+        example_table = json.dumps(prompt_table)
+    else:
+        example_table = json.dumps(table)
+    res = EXAMPLE_EXTRACT.format(text=text, table=example_table)
     return res
    
 def compose_discovery_example_text(text, table, headers):
@@ -170,6 +208,25 @@ def compose_discovery_example_text(text, table, headers):
     res = EXAMPLE_DISCOVERY.format(text=text, table1=res_known_table, table2=res_unknown_table)
     return res
 
+def compose_discovery_example_text_conversation(text, table, headers):
+    res_known_table = {}
+    res_unknown_table = {}
+    for entity in table:
+        known_table = {}
+        unknown_table = {}
+
+        if 0 in table[entity]:
+            row = table[entity][0]
+            for att in row:
+                if att in headers: known_table[att] = row[att][0]
+                else: unknown_table[att] = row[att][0]
+
+        res_known_table[entity] = known_table
+        res_unknown_table[entity] = unknown_table
+
+    res = EXAMPLE_DISCOVERY.format(text=text, table1=res_known_table, table2=res_unknown_table)
+    return res
+
 CONTEXT_DEFINE = 'In the text "{t}", the {h} value are {v}. '
 
 def compose_prompt(args, group, labeled_text, labeled_table, examples={}, aux_data=None):
@@ -179,21 +236,35 @@ def compose_prompt(args, group, labeled_text, labeled_table, examples={}, aux_da
         for ex in examples[index]:
             example_text += [compose_example_text(labeled_text[ex], labeled_table[ex])]
 
-        if len(aux_data['header_preview'][index])>0:
-            hint_prompt = '\n' + TEMPLATE_HINT.format(headers= ', '.join(aux_data['header_preview'][index]), values=', '.join(aux_data['value_preview'][index]))
+        hint_prompt = ''
+        if (len(aux_data['header_preview'][index])>0 and 'header' in args.retrieve ) or ('value 'in args.retrieve and len(aux_data['value_preview'][index])>0): 
+            hint_prompt = '\n' + TEMPLATE_HINT_META
+            if 'header' in args.retrieve:
+                hint_prompt += TEMPLATE_HINT_HEADER.format(headers= ', '.join(aux_data['header_preview'][index]))
+            if 'value' in args.retrieve:
+                hint_prompt += TEMPLATE_HINT_VALUE.format(values=', '.join(aux_data['value_preview'][index]))
+
+        if args.domain=='Conversation':
+            content = TEMPLATE_EXTRACT_CONV.format(schema_text=aux_data['schema_text'], example_text='\n'.join(example_text), 
+                                                text=group[index], hint_prompt=hint_prompt)
         else:
-            hint_prompt = ''
-        
-        content = TEMPLATE_1.format(domain=args.domain, explanation=EXP_1[args.domain], schema_text=aux_data['schema_text'], example_text='\n'.join(example_text), 
+            content = TEMPLATE_EXTRACT.format(domain=args.domain, explanation=EXP_EXTRACT[args.domain], schema_text=aux_data['schema_text'], example_text='\n'.join(example_text), 
                                     text=group[index], hint_prompt=hint_prompt)
         
         res = [SYSTEM_TEXT_EXTRACTOR, {"role": "user", "content":content}]  
 
     elif args.task == 'discover': # discovery
         for ex in examples[index]:        
-            example_text += [compose_discovery_example_text(labeled_text[ex], labeled_table[ex], aux_data['headers'][index])]
+            if args.domain =='Conversation':
+                tmp = compose_discovery_example_text_conversation(labeled_text[ex], labeled_table[ex], aux_data['headers'][index])
+            else:
+                tmp = compose_discovery_example_text(labeled_text[ex], labeled_table[ex], aux_data['headers'][index])
+            example_text += [tmp]
     
-        content = TEMPLATE_DISCOVERY.format(explanation=EXP_1[args.domain], schema_text=aux_data['discover_schema'], example_text='\n'.join(example_text), text=group[index], extracted_table=aux_data['extracted'][index])
+        if args.domain=='Conversation':
+            content = TEMPLATE_DISCOVERY_CONV.format(schema_text=aux_data['discover_schema'], example_text='\n'.join(example_text), text=group[index], extracted_table=aux_data['extracted'][index])
+        else:
+            content = TEMPLATE_DISCOVERY.format(explanation=EXP_EXTRACT[args.domain], schema_text=aux_data['discover_schema'], example_text='\n'.join(example_text), text=group[index], extracted_table=aux_data['extracted'][index])
         res = [SYSTEM_TEXT_EXTRACTOR, {"role": "user", "content":content}]  
 
     elif args.task == 'define': # define 
@@ -205,7 +276,7 @@ def compose_prompt(args, group, labeled_text, labeled_table, examples={}, aux_da
     
         for tv in examples[index]: context_text.append(CONTEXT_DEFINE.format(t=tv['text'], h=index, v=tv['values']))
         
-        content = TEMPLATE_DEFINE.format(explanation=EXP_2[args.domain], schema_text=aux_data['definition_schema'], example_text=example_text, context=''.join(context_text))
+        content = TEMPLATE_DEFINE.format(explanation=EXP_DISCOVER[args.domain], schema_text=aux_data['definition_schema'], example_text=example_text, context=''.join(context_text))
         
         res = [SYSTEM_TEXT_SUMMARIZER, {"role": "user", "content": content}]
     elif args.task == 'judge':

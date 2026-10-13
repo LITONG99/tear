@@ -10,8 +10,9 @@ from schema import domain_entities
 
 
 LLM_DIR = {
-    'Qwen':'Qwen2.5-14B-Instruct',
-    'Llama': 'Meta-Llama-3-8B-Instruct'
+    'Qwen':'/llms/Qwen2.5-14B-Instruct/',
+    'Llama8': '/llms/Meta-Llama-3-8B-Instruct/',
+    'Llama70': '/llms/Meta-Llama-3-70B-Instruct/'
 }
 
 pipeline = None
@@ -80,11 +81,12 @@ def get_response_from_llm(args, test_text, retrieved_examples, labeled_text, lab
     if args.llm_model =='Qwen':
         if not pipeline: pipeline = transformers.pipeline("text-generation", model=LLM_DIR[args.llm_model], model_kwargs={'dtype':'auto'}, device_map="auto")
         terminators = [pipeline.tokenizer.eos_token_id,pipeline.tokenizer.convert_tokens_to_ids("<|endoftext|>")]
-    elif args.llm_model=='Llama':
+    elif args.llm_model.startswith('Llama'):
         if not pipeline: pipeline = transformers.pipeline("text-generation", model=LLM_DIR[args.llm_model], model_kwargs={'dtype':torch.bfloat16}, device_map="auto")
         terminators = [pipeline.tokenizer.eos_token_id,pipeline.tokenizer.convert_tokens_to_ids("<|eot_id|>")]
     else:
         raise NotImplementedError
+
     fix_seed(args.random_seed)
     batch_size = args.llm_batch_size
 

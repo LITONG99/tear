@@ -1,8 +1,8 @@
 DOMAIN_NAME=Incidents_3
-DIR=/export/data/tlice/schema_data/tear/surrogate_model
+DIR=/tear/surrogate_model 
 
 DATA_DIR="$DIR/surrogate_data/$DOMAIN_NAME"
-BART_DIR='/export/data/tlice/schema_data/bart.large'
+BART_DIR='~/bart.large' 
 
 #P=`pwd`/scripts/multiprocessing_bpe_encoder.py
 P="$DIR/multiprocessing_bpe_encoder.py"
@@ -19,7 +19,7 @@ for SPLIT in train valid test; do
       --inputs "$SPLIT.$LANG" \
       --outputs "$SPLIT.bpe.$LANG" \
       --workers 60 \
-      --keep-empty;
+      --keep-empty
   done
 done
 

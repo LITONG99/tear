@@ -29,7 +29,7 @@ MAX_TOKENS="4096"
 UPDATE_FREQ="1"
 size="large"
 
-# train
+# train, implement --table-max-columns for different datasets 
 mkdir -p ${SAVE_PATH}
 python custom_train.py --num-workers 16 ${DATA_PATH}/bins \
     --user-dir src/ \
@@ -37,7 +37,7 @@ python custom_train.py --num-workers 16 ${DATA_PATH}/bins \
     --keep-best-checkpoints 3\
     --restore-file ${BART_PATH}/model.pt \
     --max-tokens $MAX_TOKENS \
-    --task text_to_table_task  --table-max-columns 20 \
+    --task text_to_table_task  --table-max-columns 20 \ 
     --source-lang text --target-lang data \
     --truncate-source \
     --layernorm-embedding \

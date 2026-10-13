@@ -1,12 +1,22 @@
 # Table Extraction with Attribute Recommendation 
 
-This is the official code and supplementary materials for our paper: **TEAR: Table Extraction with Attribute Recommendation from Texts via Large Language Models.** 
+## Introduction
+
+This is the official code for our SIGMOD 2027 Round 2 paper: **TEAR: Table Extraction with Attribute Recommendation from Texts via Large Language Models.** Here is an [Arxiv preprint version](https://arxiv.org/pdf/2609.15205). And please check 'files/TEAR-complete-supplementary.pdf' in this repo for complete appendices, while please stick to the final camera ready version if any difference. 
+
+Table extraction from texts is an important task for information systems, and recent approaches that prompt large language models (LLMs) with instructions have drawn great attention for their strong performance. Existing works have assumed the input texts to be table descriptions or specialized documents. However, these efforts have largely overlooked another prevalent category of texts, commonly found in news reports and social media: naturally occurring texts. Extracting tabular information from such texts poses two distinct challenges. First, high variability and the absence of explicit structural cues make fixed heuristic LLM prompts limited in precisely delineating extraction boundaries. Second, manually predefined schemas cannot capture open-ended, unseen attributes in naturally occurring text. 
+
+![Motivation of TEAR](files/intro-source-texts.png)
+
+In this paper, we propose a framework, TEAR, to address these challenges. It comprises two synergistic workflows: a Table Extraction Workflow that dynamically adapts instructions to overcome the limitation of heuristic instructions, and an Attribute Recommendation Workflow that discovers new attributes from texts to complement the heuristic schema. To our knowledge, TEAR is the first framework that supports automated text-driven attribute recommendation, enabling exploratory schema design for table extraction. 
+
+![Framework of TEAR](files/framework.png)
 
 ---
 
 ## Dataset
 
-The data is under `data/`. The `_clean.json` is the reviewed data; `_split.json` contains sample splits for complete schema split (level 0), and exploratory levels 1, 2, and 3; and the `_sd.json` contains the known attributes / new attributes splits for exploratory levels 1, 2, and 3. Under each exploratory level, we ensure that each ground truth test attribute appears in some of the test texts, and each ground truth validation attribute also appears in some of the validation texts, so a reasonable text-driven attribute recommendation system could discover them from text. Our dataset is a revised version, with original texts collected by [CACAPO-English](https://github.com/TallChris91/CACAPO-Dataset). Please give credits to the creators if you use the data.
+The benchmark data is under `data/`. The `_clean.json` is the reviewed data; `_split.json` contains sample splits for complete schema split (level 0), and exploratory levels 1, 2, and 3; and the `_sd.json` contains the known attributes / new attributes splits for exploratory levels 1, 2, and 3. Under each exploratory level, we ensure that each ground truth test attribute appears in some of the test texts, and each ground truth validation attribute also appears in some of the validation texts, so a reasonable text-driven attribute recommendation system could discover them from text. Our dataset is a revised version, with original texts collected by [CACAPO-English](https://github.com/TallChris91/CACAPO-Dataset). The Conversation data is processed from [MultiWoz 2.4](https://aclanthology.org/2022.sigdial-1.34/). Please give credits to the creators if you use the data.
 
 ---
 
@@ -38,7 +48,7 @@ Here are the steps to train the model and generate the previews by yourself:
 The embedding of texts is used for demonstration retrieval. We provide them as `embedding/_text_embedding.pt`. You can generate the embedding by yourself with [SFR-Embedding-Mistral](https://huggingface.co/Salesforce/SFR-Embedding-Mistral) and referring to `embedding.py`. The `embedding/_labeled_embedding.pt` is the embedding for attribute definition, which is only used for the Maximum Schema Similarity (MSS) baseline.
 
 ### 3. Configure the agentic LLMs
-Download the [Qwen](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct) or [Llama](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct), and set `LLM_DIR` in `main.py` to your local directory. If you use other LLMs except for Llama and Qwen series, you will also need to set up its terminators in `main.py: get_response_from_llm`.
+Download the [Qwen](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct), [Llama3-8B](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct), or [Llama3-70B](https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct), and set `LLM_DIR` in `interact_llm.py` to your local directory. If you use other LLMs, you will also need to set up its terminators in `interact_llm.py: get_response_from_llm,  get_probability_from_llm`.
 
 ### 4. Configure for the dataset
 If you use other datasets, you will need to provide some meta information about the tables. Specifically, in `schema.py`:
@@ -46,7 +56,7 @@ If you use other datasets, you will need to provide some meta information about 
 - `schema_text`: The complete schema. If an attribute is not known under some exploratory level, our code will hide it during execution even if it is listed here.
 - `discover_schema`: For AR, the tables you would like to expand columns.
 - `relevance_prefix`: For AR, the Schema Prefix for that dataset.
-- `global_attribute_definition`: For AR, the definition of attributes for the known schema. If an attribute is never known under any exploratory level, its item will not be used so you can omit it.
+- `ATTRIBUTE_DEFINITION`: For AR, the definition of attributes for the known schema. If an attribute is never known under any exploratory level, its item will not be used so you can omit it.
 
 ---
 
@@ -67,3 +77,4 @@ python main.py --task discover --domain Weather --level 3 --use_extracted <extra
 python main.py --task integrate --domain Weather --level 3 
 python main.py --task rank --domain Weather --level 3 
 ```
+

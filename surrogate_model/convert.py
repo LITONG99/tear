@@ -1,6 +1,6 @@
 import os
 import json
-import numpy as np
+
 
 CELL_SEP = ' | '
 LINE_SEP = '<NEWLINE>'
@@ -11,7 +11,8 @@ chr3 = LINE_SEP.strip()
 
 ENTITY_MAP = {
     'Incidents': ['Accident', 'Victim', 'Suspect'],
-    'Weather': ['Weather']
+    'Weather': ['Weather'],
+    'Conversation':['Attraction','Hotel','Restaurant','Taxi','Train']
 }
 
 def load_json_file(filepath):

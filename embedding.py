@@ -5,7 +5,6 @@ from torch import Tensor
 from tqdm import tqdm
 from utils import fix_seed
 import argparse
-import os
 import json
 
 embedder_tokenizer = None
@@ -63,8 +62,6 @@ if __name__ == "__main__":
     parser.add_argument("--domain", type=str, default='Weather')
     
     args = parser.parse_args()
-    os.environ["CUDA_VISIBLE_DEVICES"]="0" 
-
     fix_seed(args.random_seed)
 
     with open(f"{args.data_path}/{args.domain}_multi_clean.json", 'r') as fp:

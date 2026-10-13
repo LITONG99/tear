@@ -1,0 +1,832 @@
+{
+  "SNG1028.json": {
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL4532.json": {
+    "Attraction area": 1,
+    "Taxi departure": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL3791.json": {
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "PMUL1698.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Hotel stars": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL1938.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL1716.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "MUL0405.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1
+  },
+  "PMUL3013.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL4487.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Hotel stars": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "MUL1244.json": {
+    "Restaurant requested people": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Restaurant requested day": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL0606.json": {
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "SNG1252.json": {
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "SSNG0227.json": {
+    "Hotel stars": 1,
+    "Hotel price range": 1
+  },
+  "MUL0257.json": {
+    "Restaurant area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Restaurant food": 1,
+    "Train arrive by": 1
+  },
+  "MUL2365.json": {
+    "Restaurant requested people": 1,
+    "Attraction area": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1
+  },
+  "PMUL1037.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "SNG0325.json": {
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL1370.json": {
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL1205.json": {
+    "Restaurant requested people": 1,
+    "Attraction area": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1,
+    "Train arrive by": 1
+  },
+  "PMUL2661.json": {
+    "Taxi departure": 1,
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "MUL0380.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1,
+    "Train arrive by": 1
+  },
+  "MUL1840.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1
+  },
+  "PMUL0180.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Restaurant requested day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "PMUL3941.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Hotel area": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Restaurant requested day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "MUL0056.json": {
+    "Restaurant name": 1,
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "PMUL2808.json": {
+    "Attraction area": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1
+  },
+  "MUL0979.json": {
+    "Attraction area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Restaurant food": 1
+  },
+  "SNG02172.json": {
+    "Hotel stars": 1,
+    "Hotel price range": 1
+  },
+  "PMUL0784.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1,
+    "Train arrive by": 1
+  },
+  "PMUL2557.json": {
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL2304.json": {
+    "Restaurant requested people": 1,
+    "Attraction area": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Restaurant requested day": 1
+  },
+  "MUL2368.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1
+  },
+  "PMUL3328.json": {
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL4630.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1
+  },
+  "PMUL4523.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL1667.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Hotel stars": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1,
+    "Train arrive by": 1
+  },
+  "MUL1237.json": {
+    "Restaurant name": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Restaurant food": 1
+  },
+  "SNG01327.json": {
+    "Taxi departure": 1
+  },
+  "PMUL3002.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Hotel stars": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL3320.json": {
+    "Attraction area": 1,
+    "Taxi departure": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL2537.json": {
+    "Attraction area": 1,
+    "Taxi departure": 1,
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL2951.json": {
+    "Taxi departure": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1
+  },
+  "MUL2038.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL2621.json": {
+    "Attraction area": 1,
+    "Taxi departure": 1,
+    "Hotel price range": 1
+  },
+  "PMUL1490.json": {
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL4231.json": {
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Restaurant food": 1
+  },
+  "SNG02000.json": {
+    "Taxi departure": 1
+  },
+  "MUL1835.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1
+  },
+  "MUL2623.json": {
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1
+  },
+  "SNG1120.json": {
+    "Attraction area": 1
+  },
+  "PMUL4757.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1,
+    "Train arrive by": 1
+  },
+  "MUL0605.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Train arrive by": 1
+  },
+  "SNG0778.json": {
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL0142.json": {
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "SNG1395.json": {
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL4043.json": {
+    "Train departure": 1,
+    "Hotel stars": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Hotel price range": 1,
+    "Train arrive by": 1
+  },
+  "PMUL4518.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Restaurant requested day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "SNG1253.json": {
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL3880.json": {
+    "Restaurant requested people": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Restaurant requested day": 1
+  },
+  "PMUL0824.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1,
+    "Train arrive by": 1
+  },
+  "PMUL3232.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Restaurant requested day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "MUL1032.json": {
+    "Attraction area": 1,
+    "Hotel name": 1
+  },
+  "PMUL2403.json": {
+    "Restaurant requested people": 1,
+    "Attraction area": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1
+  },
+  "PMUL4423.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Hotel confirmed reference": 1,
+    "Restaurant requested day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "SNG01839.json": {
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "MUL1391.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Hotel confirmed reference": 1,
+    "Restaurant requested day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "PMUL0496.json": {
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Restaurant food": 1
+  },
+  "PMUL0704.json": {
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Restaurant food": 1,
+    "Train arrive by": 1
+  },
+  "MUL1001.json": {
+    "Attraction area": 1,
+    "Taxi departure": 1,
+    "Hotel stars": 1,
+    "Hotel price range": 1
+  },
+  "PMUL0019.json": {
+    "Restaurant name": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "MUL0598.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "MUL0588.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "MUL2395.json": {
+    "Attraction area": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant food": 1
+  },
+  "PMUL4760.json": {
+    "Train departure": 1,
+    "Hotel stars": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Hotel price range": 1
+  },
+  "PMUL1557.json": {
+    "Train departure": 1,
+    "Hotel stars": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Hotel price range": 1
+  },
+  "PMUL4985.json": {
+    "Attraction area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Restaurant food": 1
+  },
+  "PMUL1576.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "SNG0251.json": {
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Restaurant food": 1,
+    "Train arrive by": 1
+  },
+  "MUL1947.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL4862.json": {
+    "Restaurant requested people": 1,
+    "Attraction area": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1
+  },
+  "PMUL0235.json": {
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "PMUL4305.json": {
+    "Hotel name": 1,
+    "Hotel stars": 1
+  },
+  "MUL1059.json": {
+    "Attraction area": 1,
+    "Hotel name": 1
+  },
+  "PMUL0485.json": {
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel price range": 1,
+    "Restaurant food": 1
+  },
+  "PMUL0287.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Restaurant requested day": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1,
+    "Restaurant food": 1
+  },
+  "SNG1014.json": {
+    "Hotel name": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL1345.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1
+  },
+  "PMUL2495.json": {
+    "Restaurant requested people": 1,
+    "Attraction area": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1
+  },
+  "MUL2667.json": {
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel requested stay": 1,
+    "Hotel requested day": 1
+  },
+  "SSNG0170.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1
+  },
+  "SNG0916.json": {
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Hotel confirmed reference": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1
+  },
+  "PMUL4463.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Hotel name": 1,
+    "Hotel stars": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1
+  },
+  "MUL0263.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Restaurant requested day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL1437.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL3499.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Hotel stars": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Train arrive by": 1
+  },
+  "MUL2037.json": {
+    "Hotel name": 1,
+    "Train departure": 1,
+    "Hotel stars": 1,
+    "Train destination": 1,
+    "Hotel confirmed reference": 1,
+    "Train day": 1,
+    "Hotel requested stay": 1,
+    "Hotel price range": 1,
+    "Hotel requested day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL2438.json": {
+    "Restaurant requested people": 1,
+    "Attraction area": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Taxi departure": 1,
+    "Restaurant requested day": 1,
+    "Restaurant food": 1
+  },
+  "MUL0440.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Train arrive by": 1
+  },
+  "PMUL0735.json": {
+    "Restaurant requested people": 1,
+    "Restaurant area": 1,
+    "Restaurant price range": 1,
+    "Restaurant name": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1,
+    "Restaurant requested day": 1,
+    "Train arrive by": 1
+  },
+  "MUL1709.json": {
+    "Attraction area": 1,
+    "Train departure": 1,
+    "Train destination": 1,
+    "Train day": 1
+  }
+}

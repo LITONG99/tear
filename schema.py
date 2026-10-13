@@ -1,7 +1,6 @@
 import json
 
-
-global_attribute_definition = {
+ATTRIBUTE_DEFINITION = {
 'Incidents':
 {
     "Accident date": "Accident date identifies the specific time and/or date when an accident or incident occurred. The value should be a precise temporal description, including exact dates, times, or time ranges, that indicates when the event took place, which can include specific days of the week, months, or years. ",
@@ -53,13 +52,56 @@ global_attribute_definition = {
     'Rain status': 'Rain status identifies descriptive details about rain, including its intensity, amount, expected change, or other characteristics like "heavy" or "easing."',
     'Cloud status': 'Cloud status identifies descriptive details about cloud cover, including its amount, density, or expected change, such as "mostly cloudy" or "begin to clear."',
     'Cloud type': 'Cloud type identifies the specific classification or form of the clouds present, such as "cumulus" or "high-level clouds."',
+},
+"Conversation": {
+    "Attraction name": "Attraction name identifies the specific name of a tourist site or point of interest (e.g., 'scudamores punting co') as mentioned in the dialogue.",
+    "Attraction area": "Attraction area identifies the geographical region or neighborhood of the attraction (e.g., 'centre', 'east'), as specified by the user.",
+    "Attraction type": "Attraction type identifies the category or kind of attraction (e.g., 'museum', 'park', 'boat'), as mentioned by the user.",
+
+    "Hotel name": "Hotel name identifies the specific name of the hotel (e.g., 'warkworth house') as explicitly mentioned or confirmed by the user in the dialogue.",
+    "Hotel area": "Hotel area identifies the desired geographical region for the hotel (e.g., 'centre', 'east'), as specified by the user.",
+    "Hotel type": "Hotel type identifies the accommodation category (e.g., 'hotel', 'guest house') as requested by the user.",
+    "Hotel parking": "Hotel parking indicates whether the hotel offers parking facilities, with value 'yes' or 'no', as specified by the user.",
+    "Hotel price range": "Hotel price range identifies the price category (e.g., 'cheap', 'moderate', 'expensive') preferred by the user.",
+    "Hotel internet": "Hotel internet indicates whether the hotel provides free Wi-Fi, with value 'yes' or 'no', as specified by the user.",
+    "Hotel stars": "Hotel stars identifies the star rating of the hotel (e.g., '4', '5') as requested by the user.",
+    "Hotel requested day": "Hotel requested day identifies the day of the week (e.g., 'tuesday') the user wants to check in, as the final stated request.",
+    "Hotel requested people": "Hotel requested people identifies the number of guests (e.g., '6') the user finally requests for the hotel booking.",
+    "Hotel requested stay": "Hotel requested stay identifies the number of nights (e.g., '2') the user finally requests to stay at the hotel.",
+    "Hotel confirmed name": "Hotel confirmed name identifies the hotel name (e.g., 'the cambridge belfry') returned by the system upon successful booking confirmation.",
+    "Hotel confirmed reference": "Hotel confirmed reference identifies the alphanumeric booking reference number (e.g., '7GAWK763') provided by the system upon successful hotel booking.",
+
+    "Restaurant name": "Restaurant name identifies the specific name of the restaurant (e.g., 'river bar steakhouse and grill') as mentioned or confirmed by the user.",
+    "Restaurant area": "Restaurant area identifies the desired neighbourhood (e.g., 'centre', 'east') for the restaurant, as specified by the user.",
+    "Restaurant food": "Restaurant food identifies the type of cuisine (e.g., 'modern european', 'Italian') requested by the user; may contain multiple values.",
+    "Restaurant price range": "Restaurant price range identifies the price category (e.g., 'cheap', 'moderate') preferred by the user.",
+    "Restaurant requested day": "Restaurant requested day identifies the day of the week (e.g., 'thursday') the user finally requests for the reservation.",
+    "Restaurant requested people": "Restaurant requested people identifies the number of people (e.g., '3') the user finally requests for the restaurant booking.",
+    "Restaurant requested time": "Restaurant requested time identifies the reservation time (e.g., '13:00') in 24-hour format, as the user's final requested time.",
+    "Restaurant confirmed name": "Restaurant confirmed name identifies the restaurant name returned by the system upon successful booking confirmation.",
+    "Restaurant confirmed reference": "Restaurant confirmed reference identifies the alphanumeric booking reference number (e.g., 'A36LRSL9') provided by the system upon successful restaurant booking.",
+
+    "Taxi departure": "Taxi departure identifies the pick-up location for the taxi (e.g., 'restaurant 2 two') as specified by the user.",
+    "Taxi destination": "Taxi destination identifies the drop-off location for the taxi (e.g., 'museum of classical archaeology') as specified by the user.",
+    "Taxi leave at": "Taxi leave at identifies the desired departure time for the taxi (e.g., '10:00') in 24-hour format, as requested by the user.",
+    "Taxi arrive by": "Taxi arrive by identifies the latest arrival time for the taxi (e.g., '19:45') in 24-hour format, as specified by the user.",
+
+    "Train departure": "Train departure identifies the departure station for the train journey (e.g., 'cambridge') as specified by the user.",
+    "Train destination": "Train destination identifies the final station for the train journey (e.g., 'bishops stortford') as specified by the user.",
+    "Train day": "Train day identifies the day of the week (e.g., 'friday') for the train trip, as specified by the user.",
+    "Train leave at": "Train leave at identifies the departure time for the train (e.g., '17:29') in 24-hour format, as requested by the user.",
+    "Train arrive by": "Train arrive by identifies the latest arrival time for the train (e.g., '19:45') in 24-hour format, as specified by the user.",
+    "Train requested people": "Train requested people identifies the number of passengers (e.g., '4') the user finally requests for the train booking.",
+    "Train confirmed reference": "Train confirmed reference identifies the alphanumeric booking reference number (e.g., 'UIFV8FAS') provided by the system upon successful train booking."
 }
 }
 
 
 relevance_prefix = {
     'Incidents': '''Here is a schema designed to document and manage detailed information and facts about criminal incidents or accidents, particularly those involving violence, such as shootings or other crimes. The attributes are organized into three main entities: the accident itself, the victims, and the suspects. For each entity, there are multiple attributes. The attributes are unique and in consistent styles. Here are the attributes in this schema: "''',    
-    'Weather': '''Here is a schema designed to document and manage detailed information and facts about weather conditions from news reports, particularly those about location, time, temperature, wind, cloud, rain, and snow. The attributes are organized into one main entity: the Weather itself, and there are multiple attributes. The attributes are unique and in consistent styles. Here are the attributes in this schema: "'''
+    'Weather': '''Here is a schema designed to document and manage detailed information and facts about weather conditions from news reports, particularly those about location, time, temperature, wind, cloud, rain, and snow. The attributes are organized into one main entity: the Weather itself, and there are multiple attributes. The attributes are unique and in consistent styles. Here are the attributes in this schema: "''',
+    'Conversation': '''Here is a schema designed to document and manage detailed information from multi-turn task-oriented dialogues, covering five service domains: Attraction, Hotel, Restaurant, Taxi, and Train. \
+        For each domain, there are multiple attributes recording both descriptive facts and final booking details (user's final requests and system's confirmed reservations). The attributes are unique and in consistent styles. Here are the attributes in this schema: "'''
     }
        
 
@@ -140,12 +182,61 @@ schema_text = {
         "1":{...},
         ...
     }
+}''',
+'Conversation':'''
+{
+    "Attraction": {
+        "Attraction name": "...",
+        "Attraction area": "...",
+        "Attraction type": "..."
+    },
+    "Hotel": {
+        "Hotel name": "...",
+        "Hotel area": "...",
+        "Hotel type": "...",
+        "Hotel parking": "...",
+        "Hotel price range": "...",
+        "Hotel internet": "...",
+        "Hotel stars": "...",
+        "Hotel requested day": "...",
+        "Hotel requested people": "...",
+        "Hotel requested stay": "...",
+        "Hotel confirmed name": "...",
+        "Hotel confirmed reference": "..."
+    },
+    "Restaurant": {
+        "Restaurant name": "...",
+        "Restaurant area": "...",
+        "Restaurant food": "...",
+        "Restaurant price range": "...",
+        "Restaurant requested day": "...",
+        "Restaurant requested people": "...",
+        "Restaurant requested time": "...",
+        "Restaurant confirmed name": "...",
+        "Restaurant confirmed reference": "..."
+    },
+    "Taxi": {
+        "Taxi departure": "...",
+        "Taxi destination": "...",
+        "Taxi leave at": "...",
+        "Taxi arrive by": "..."
+    },
+    "Train": {
+        "Train departure": "...",
+        "Train destination": "...",
+        "Train day": "...",
+        "Train leave at": "...",
+        "Train arrive by": "...",
+        "Train requested people": "...",
+        "Train confirmed reference": "..."
+    }
 }'''
 }
 
 domain_entities = {
     'Weather': ['Weather'],
-    'Incidents':['Accident', 'Victim', 'Suspect']
+    'Incidents':['Accident', 'Victim', 'Suspect'],
+    'Conversation':['Attraction','Hotel','Restaurant','Taxi','Train']
 }
 
 discover_schema = {
@@ -187,7 +278,31 @@ discover_schema = {
         "1":{...},
         ...
     }
-}'''}
+}''',
+'Conversation':'''
+{
+    "Attraction": {
+        "<new attribute 1>": "...",
+        "<new attribute 2>": "..."
+    },
+    "Hotel": {
+        "<new attribute 1>": "...",
+        "<new attribute 2>": "..."
+    },
+    "Restaurant": {
+        "<new attribute 1>": "...",
+        "<new attribute 2>": "..."
+    },
+    "Taxi": {
+        "<new attribute 1>": "...",
+        "<new attribute 2>": "..."
+    },
+    "Train": {
+        "<new attribute 1>": "...",
+        "<new attribute 2>": "..."
+    }
+}'''
+}
 
 definition_schema = '''
 {
@@ -202,7 +317,7 @@ attribute_schema = '''
 
 
 def process_entity_schema_text(domain, known_headers, return_json=True):
-    res = {h: global_attribute_definition[domain][h] for h in known_headers}
+    res = {h: ATTRIBUTE_DEFINITION[domain][h] for h in known_headers}
     if return_json:
         return json.dumps(res)
     else: return res
@@ -211,15 +326,22 @@ def process_schema_text(domain, known_headers):
     known_headers = set(known_headers) 
 
     res = []
+   
     lines = schema_text[domain].split('\n')
-    for line in lines:
-        if '[]' in line:
-            cur_h = line[line.find('"')+1:line.rfind('"')]
-            if cur_h in known_headers:
-                res.append(line)
-        else:
-            res.append(line)
 
+    if domain =='Conversation':
+        for line in lines:
+            if '...' in line:
+                cur_h = line[line.find('"')+1:line.rfind('":')]
+                if cur_h in known_headers: res.append(line)
+            else: res.append(line)
+    else:
+        lines = schema_text[domain].split('\n')
+        for line in lines:
+            if '[]' in line:
+                cur_h = line[line.find('"')+1:line.rfind('"')]
+                if cur_h in known_headers: res.append(line)
+            else: res.append(line)
     res = '\n'.join(res)
     return res
     
@@ -241,7 +363,7 @@ def process_definition_examples(domain, known_headers, context):
     for i, h in enumerate(known_headers):
         context_text = []
         for tv in context[h]: context_text.append(CONTEXT_DEFINE.format(t=tv['text'], h=h, v=tv['values']))
-        tmp = EXAMPLE_DEFINE.format(context=''.join(context_text), definition = json.dumps({h:global_attribute_definition[domain][h]}))
+        tmp = EXAMPLE_DEFINE.format(context=''.join(context_text), definition = json.dumps({h:ATTRIBUTE_DEFINITION[domain][h]}))
         res.append(tmp)
 
     res = '\n'.join(res)

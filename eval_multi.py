@@ -4,7 +4,7 @@ import bert_score
 from tqdm import tqdm
 from collections import defaultdict
 
-bert_scorer = bert_score.BERTScorer(lang="en", rescale_with_baseline=True)
+bert_scorer = bert_score.BERTScorer(lang="en", rescale_with_baseline=True) # you can store and load the model locally
 metric_cache = {'c': dict(),'E':dict(), 'BS-scaled':dict()} # (string, string) cache; this could speed up a lot
 
 def calc_data_similarity(tgt, pred, metric):
@@ -217,6 +217,7 @@ def compute_metrics_for_headers(hs, ts, max_n=None):
         print("Recall-AUC-chrf: %.5f, \t Recall-AUC-bs: %.5f, \t Ratio: %.5f." % (r_scores['c'], r_scores['BS-scaled'], r_scores['mr']))
     else:
         print("Recall-AUC-chrf: %.5f, \t Recall-AUC-bs: %.5f." % (r_scores['c'], r_scores['BS-scaled']))
+    
     res['average'] = r_scores
     return res
 

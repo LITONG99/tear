@@ -79,7 +79,32 @@ def get_value_for_header_in_table(table, header, multiple_entity=False):
                 res += table[rid][header]
     return res
         
+def add_row_index(data):
+    # Conversation is a single-record table dataset, so we add a row index to each table for consistency with other datasets.
+    new_data = {}
+    for index in data:
+        new_data[index] = {}
+        if not data[index]:
+            continue
 
+        for entity in data[index]:
+            new_entity = {}
+
+            if entity in ['Attraction','Hotel','Restaurant','Taxi','Train']:
+                raw_entity = data[index][entity]
+                new_row = {}
+                for att in raw_entity:
+                    v = raw_entity[att]
+
+                    if isinstance(v, str): new_value = [v]
+                    elif isinstance(raw_entity[att], list): new_value = [str(v) for v in raw_entity[att]]
+                    else: new_value = []
+                    new_row[att] = new_value
+                if len(new_row)>0:
+                    new_entity[0] = new_row
+            new_data[index][entity] = new_entity
+
+    return new_data 
 
 def filter_empty_data(data):
     new_data = {}
@@ -89,18 +114,39 @@ def filter_empty_data(data):
             continue
         for entity in data[index]:
             new_entity = {}
-            for rid in data[index][entity]:
-                if not rid.isdigit():
-                    continue
+            # for Conversation
+            if entity in ['Attraction','Hotel','Restaurant','Taxi','Train']:
+                raw_entity = data[index][entity]
                 new_row = {}
-                att = data[index][entity][rid]
-                for k in att:
-                    # core 
-                    new_value = [str(v) for v in att[k] if len(str(v))>0]
-                    if len(new_value)>0:        
-                        new_row[k] = new_value
+                for att in raw_entity:
+                    v = raw_entity[att]
+
+                    if isinstance(v, str):
+                        if len(v)>0: 
+                            new_value = [v]
+                        else: 
+                            new_value = []
+                    elif isinstance(raw_entity[att], list):
+                        new_value = [str(v) for v in raw_entity[att] if len(str(v))>0]
+                    else: 
+                        new_value = []
+                    if len(new_value)>0: new_row[att] = new_value
                 if len(new_row)>0:
-                    new_entity[len(new_entity)]=new_row
+                    new_entity[0] = new_row
+
+            else:
+                for rid in data[index][entity]:
+                    if not rid.isdigit():
+                        continue
+                    new_row = {}
+                    att = data[index][entity][rid]
+                    for k in att:
+                        # core 
+                        new_value = [str(v) for v in att[k] if len(str(v))>0]
+                        if len(new_value)>0:        
+                            new_row[k] = new_value
+                    if len(new_row)>0:
+                        new_entity[len(new_entity)]=new_row
             new_data[index][entity] = new_entity
 
     return new_data 
@@ -116,6 +162,8 @@ def load_data(domain, data_path, level, update=[]):
         split = json.load(fp)
 
     train_index, valid_index, test_index = split[f'train{level}_index'], split[f'valid{level}_index'], split[f'test{level}_index']
+    
+    test_index = test_index[:5]
 
     if level == '0':
         headers = set(schema[f'train1']+ schema['validation']+ schema[f'test1'])
@@ -275,3 +323,5 @@ def parse_response_to_term(task, text):
         if t in text:
             return t, True
     return terms[0], False 
+
+

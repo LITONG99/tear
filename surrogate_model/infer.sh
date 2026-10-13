@@ -1,7 +1,7 @@
 seed=2025
 level=3
 DOMAIN=Incidents
-DIR=/export/data/tlice/schema_data/tear/surrogate_model
+DIR=/tear/surrogate_model
 DATA_PATH=${DIR}/surrogate_data/${DOMAIN}_${level}
 ckpt=${DIR}/${DOMAIN}_${level}_${seed}/checkpoint_average_best-3.pt
 
